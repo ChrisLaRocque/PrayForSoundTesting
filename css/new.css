@@ -9,12 +9,22 @@ html {
 #header {
   text-align: center;
 }
-h1{
+h1 {
   color: #fad9c1;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2.5em;
+}
+p {
+  font-family: 'Quattrocento', serif;
+  color: #fad9c1;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
 }
 .blocks {
   text-align: center;;
@@ -27,12 +37,12 @@ h1{
 }
 .block h1 {
   opacity: 0;
-  margin: 2em;
-  border-bottom: .15em solid #fad9c1;
+  margin: 3em;
+  border: .15em solid #fad9c1;
 }
 div.block:hover h1 {
   opacity: 1;
-  transition: opacity .5s;
+  transition: opacity .75s;
 }
 .block-1 {
   /*background-color: #0e9aa7;*/
@@ -49,4 +59,7 @@ div.block:hover h1 {
 .block-4 {
   /*background-color: #fe8a71;*/
   background: linear-gradient(#fe8a71, #4a4e4d);
+}
+#footer {
+  text-align: center;
 }
