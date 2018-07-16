@@ -1,6 +1,8 @@
 * {
   margin: 0;
-  padding;
+  padding: 0;
+  -webkit-margin: 0;
+  -webkit-padding: 0;
 }
 html {
   font-size: 1em;
@@ -34,11 +36,14 @@ a:visited {
   height: 40em;
   display: inline-block;
   vertical-align: top;
+  text-align: center;
 }
 .block h1 {
   opacity: 0;
-  margin: 3em;
+  margin: 3em auto;
+  padding: .25em;
   border: .15em solid #fad9c1;
+  width: fit-content;
 }
 div.block:hover h1 {
   opacity: 1;
@@ -62,4 +67,24 @@ div.block:hover h1 {
 }
 #footer {
   text-align: center;
+}
+@media screen and (max-width: 775px) {
+  html {
+    font-size: .65em;
+  }
+}
+@media screen and (max-width: 630px) {
+  html {
+    font-size: .5em;
+  }
+}
+@media screen and (max-width: 510px) {
+  html {
+    font-size: .35em;
+  }
+}
+@media screen and (max-width: 365px) {
+  html {
+    font-size: .25em;
+  }
 }
