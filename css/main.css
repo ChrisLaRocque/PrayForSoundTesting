@@ -30,9 +30,16 @@ h1 {
   font-weight: 700;
   font-size: 3em;
 }
+h2 {
+  color: #fad9c1;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+}
 p {
   font-family: 'Quattrocento', serif;
   color: #fad9c1;
+  font-size: 1em;
 }
 a {
   text-decoration: none;
@@ -63,18 +70,15 @@ a:visited {
   text-align: center;
 }
 .block h1 {
-  opacity: 0;
   margin: auto;
   margin-top: 1.2em;
   padding: .25em;
   border: .15em solid #fad9c1;
   width: 2.5em;
   vertical-align: middle;
+  font-size: 2.5em;
 }
-div.block:hover h1 {
-  opacity: 1;
-  transition: opacity .75s;
-}
+
 .block h1:hover {
   background-color: #fad9c1;
 }
@@ -113,35 +117,29 @@ div.block:hover h1 {
   padding: 1em;
   margin: 0 auto;
 }
-.players {
-  text-align: center;
-  border-bottom: 0;
-  padding-top: 1em;
+.music img {
+  height: 20em;
 }
-details.open {
-  display: block;
-  width: 100%;
+.player {
+  display: none;
+  padding: 1em;
+  width: 80%;
+  margin: 0 auto;
 }
-.open summary {
-  display: inline;
-  width: 40%;
-}
-.open iframe {
-  width: 50%;
-  display: inline;
-}
-
-details {
+div.description {
   display: inline-block;
-  width: 45%;
+  width: 60%;
   vertical-align: top;
-  margin: .5em;
+  text-align: left;
 }
-summary {
-  outline: none;
+iframe {
+  display: inline-block;
+  width: 30%;
+  height: 20em;
+  margin: 1em;
 }
-summary img {
-  height: 26em;
+#artwork {
+  text-align: center;
 }
 #footer {
   text-align: center;
@@ -181,3 +179,52 @@ details > summary {
 ::-webkit-details-marker {
   display: none
 }
+/*
+.feature {
+  width: 93%;
+  display: block;
+  height: auto;
+  padding: 1em;
+  margin: 0 auto;
+}
+.players {
+  text-align: center;
+  border-bottom: 0;
+  padding-top: 1em;
+}
+details.open {
+  display: block;
+  width: 95%;
+  height: fit-content;
+}
+.open summary {
+  width: 49%;
+  display: inline-block;
+}
+#waiting_room_details.open summary {
+  float: left;
+}
+#eib_details.open summary {
+  float: right;
+}
+.open iframe {
+  width: 43%;
+  display: inline-block;
+  height: 26em;
+  margin: 0 3em;
+}
+
+details {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+  margin: .5em;
+}
+summary {
+  outline: none;
+  list-style: none;
+}
+summary img {
+  height: 26em;
+  display: inline-block;
+}*/

@@ -4,7 +4,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Pray for Sound - Home</title>
+    <title>Pray for Sound - Music</title>
     <link rel="icon" type="image/png" href="img/vinyl.png">
 
     <!-- Facebook open graph tags -->
@@ -13,7 +13,7 @@
 		<meta property="og:url" content="http://www.prayforsound.com" />
 		<meta property="og:image" content="apple-touch-icon.png" />
 		<meta property="og:site_name" content="Pray for Sound" />
-		<meta property="og:description" content="Pray for Sound - Loud Rock" />
+		<meta property="og:playerription" content="Pray for Sound - Loud Rock" />
 		<meta property="fb:admins" content="745961270" />
 
     <!-- Icons -->
@@ -39,7 +39,7 @@
     </script>
   </head>
 
-  <body>
+  <body class="music">
     <div id="header">
       <a href="/"><h1>Pray For Sound</h1></a>
       <div id="socials">
@@ -49,48 +49,66 @@
         <a href="http://www.youtube.com/user/prayforsoundmusic" target="_blank"><img src="img/logos/youtube.png" /></a>
       </div>
     </div>
-    <div class="feature music">
+    <div class="feature">
       <h1>Music</h1>
-      <div class="players">
-        <details id="waiting_room_details">
-          <summary id="waiting_room_details"><img src="img/artwork/waitingroom_artwork.png" /></summary>
+      <div>
+        <div id="artwork">
+          <img id="wr" src="img/artwork/waitingroom_artwork.png" />
+          <img id="eib" src="img/artwork/EIB_artwork.jpg" />
+          <img id="dreamer" src="img/artwork/dreamer_artwork.jpg" />
+          <img id="mono" src="img/artwork/mono_artwork.jpg" />
+        </div>
+        <div class="wr player">
+          <div class="description">
+            <h2>Waiting Room - 2018</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit curae in nec non rutrum sodales, suscipit fermentum nisi pulvinar cubilia. Mattis mauris in pulvinar turpis hac montes blandit quam condimentum, malesuada nunc odio nibh cubilia per aptent ullamcorper ridiculus, curabitur curae consequat gravida vestibulum netus placerat sociis. Fusce leo netus cubilia auctor varius magnis sagittis, ante etiam nisl euismod facilisi senectus montes dui, proin torquent tincidunt cursus lacinia posuere. Cras quisque vitae velit placerat justo erat aliquet laoreet porta diam, imperdiet tortor natoque accumsan magna egestas nascetur vulputate dignissim, conubia porttitor fusce vehicula pellentesque metus convallis massa inceptos.</p>
+          </div>
           <iframe src="https://open.spotify.com/embed/album/4JFNVYJ2LKXd0eB1GKJWKx" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </details>
-        <details>
-          <summary><img src="img/artwork/EIB_artwork.jpg" /></summary>
-          <p>What does this all mean?</p>
-        </details>
-        <details>
-          <summary><img src="img/artwork/dreamer_artwork.jpg" /></summary>
-          <p>What does this all mean?</p>
-        </details>
-        <details>
-          <summary><img src="img/artwork/mono_artwork.jpg" /></summary>
-          <p>What does this all mean?</p>
-        </details>
+        </div>
+        <div class="eib player">
+          <div class="description">
+            <h2>Everything Is Beautiful - 2016</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit curae in nec non rutrum sodales, suscipit fermentum nisi pulvinar cubilia. Mattis mauris in pulvinar turpis hac montes blandit quam condimentum, malesuada nunc odio nibh cubilia per aptent ullamcorper ridiculus, curabitur curae consequat gravida vestibulum netus placerat sociis. Fusce leo netus cubilia auctor varius magnis sagittis, ante etiam nisl euismod facilisi senectus montes dui, proin torquent tincidunt cursus lacinia posuere. Cras quisque vitae velit placerat justo erat aliquet laoreet porta diam, imperdiet tortor natoque accumsan magna egestas nascetur vulputate dignissim, conubia porttitor fusce vehicula pellentesque metus convallis massa inceptos.</p>
+          </div>
+          <iframe src="https://open.spotify.com/embed/album/4JFNVYJ2LKXd0eB1GKJWKx" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="dreamer player">
+          <div class="description">
+            <h2>Dreamer - 2014</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit curae in nec non rutrum sodales, suscipit fermentum nisi pulvinar cubilia. Mattis mauris in pulvinar turpis hac montes blandit quam condimentum, malesuada nunc odio nibh cubilia per aptent ullamcorper ridiculus, curabitur curae consequat gravida vestibulum netus placerat sociis. Fusce leo netus cubilia auctor varius magnis sagittis, ante etiam nisl euismod facilisi senectus montes dui, proin torquent tincidunt cursus lacinia posuere. Cras quisque vitae velit placerat justo erat aliquet laoreet porta diam, imperdiet tortor natoque accumsan magna egestas nascetur vulputate dignissim, conubia porttitor fusce vehicula pellentesque metus convallis massa inceptos.</p>
+          </div>
+          <iframe src="https://open.spotify.com/embed/album/1faB36WLHliVa6xqjzTtcu" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="mono player">
+          <div class="description">
+            <h2>Monophonic - 2012</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit curae in nec non rutrum sodales, suscipit fermentum nisi pulvinar cubilia. Mattis mauris in pulvinar turpis hac montes blandit quam condimentum, malesuada nunc odio nibh cubilia per aptent ullamcorper ridiculus, curabitur curae consequat gravida vestibulum netus placerat sociis. Fusce leo netus cubilia auctor varius magnis sagittis, ante etiam nisl euismod facilisi senectus montes dui, proin torquent tincidunt cursus lacinia posuere. Cras quisque vitae velit placerat justo erat aliquet laoreet porta diam, imperdiet tortor natoque accumsan magna egestas nascetur vulputate dignissim, conubia porttitor fusce vehicula pellentesque metus convallis massa inceptos.</p>
+          </div>
+          <iframe src="https://open.spotify.com/embed/album/1wEUITDTC4QOZWwgJ4we1H" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        </div>
       </div>
     </div>
     <div id="footer">
       <p>Pray For Sound</p>
     </div>
     <script>
-    var detailsElem = document.getElementById("waiting_room_details")
-    detailsElem.addEventListener("toggle", function(evt) {
-      if (detailsElem.open) {
-        $("#waiting_room_details").addClass("open");
-      } else {
-        $("#waiting_room_details").removeClass("open");
-      }
-      }, false);
-    /*
-    function openMeUp() {
-      var detailsStatus = document.getElementById("waiting_room_details").open;
-      if (detailsStatus == true) {
-        $("#waiting_room_details").addClass("open");
-      } else {
-        $("#waiting_room_details").removeClass("open");
-      }
-    }*/
+    $( "#wr" ).click(function() {
+      $( ".player" ).hide();
+      $( ".wr" ).show();
+    });
+    $( "#eib" ).click(function() {
+      $( ".player" ).hide();
+      $( ".eib" ).show();
+    });
+    $( "#dreamer" ).click(function() {
+      $( ".player" ).hide();
+      $( ".dreamer" ).show();
+    });
+    $( "#mono" ).click(function() {
+      $( ".player" ).hide();
+      $( ".mono" ).show();
+    });
     </script>
   </body>
 
