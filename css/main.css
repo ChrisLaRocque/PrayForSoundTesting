@@ -81,6 +81,7 @@ a:visited {
 
 .block h1:hover {
   background-color: #fad9c1;
+  opacity: 1;
 }
 .music {
   /*background-color: #0e9aa7;*/
