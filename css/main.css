@@ -129,13 +129,13 @@ a:visited {
 }
 div.description {
   display: inline-block;
-  width: 60%;
+  width: 50%;
   vertical-align: top;
   text-align: left;
 }
 iframe {
   display: inline-block;
-  width: 30%;
+  width: 40%;
   height: 20em;
   margin: 1em;
 }
