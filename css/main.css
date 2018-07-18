@@ -124,6 +124,7 @@ p a:link:hover {
 }
 .blocks {
   text-align: center;
+  margin-top: 1.75em;
 }
 .block {
   width: 24%;
