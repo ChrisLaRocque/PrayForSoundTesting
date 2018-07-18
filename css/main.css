@@ -13,6 +13,7 @@ html {
   font-size: 4em;
   display: inline-block;
   margin-left: 4em;
+  border: 0;
 }
 #socials {
   display: inline-block;
@@ -35,6 +36,17 @@ h2 {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   font-size: 2em;
+  width: fit-content;
+  border-bottom: .1em solid #fad9c1;
+  margin-bottom: .25em;
+}
+h3 {
+  color: #fad9c1;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  width: fit-content;
+  margin-bottom: .5em;
 }
 p {
   font-family: 'Quattrocento', serif;
@@ -44,44 +56,23 @@ p {
 a {
   text-decoration: none;
 }
-a:hover{
+a:hover {
   opacity: .7;
   cursor: pointer;
 }
 a:visited {
   text-decoration: none;
+  color: #fad9c1;
 }
-#video {
-  text-align: center;
+p a:link {
+  color: #fad9c1;
+  opacity: .5;
 }
-#video iframe {
-  width: 97%;
-  height: 20em;
-  margin: 0 auto;
-}
-.blocks {
-  text-align: center;;
-}
-.block {
-  width: 24%;
-  height: 15em;
-  display: inline-block;
-  vertical-align: top;
-  text-align: center;
-}
-.block h1 {
-  margin: auto;
-  margin-top: 1.7em;
-  padding: .25em;
-  border: .15em solid #fad9c1;
-  width: 2.5em;
-  font-size: 2.5em;
+p a:link:hover {
+  opacity: .7;
 }
 
-.block h1:hover {
-  background-color: #fad9c1;
-  opacity: 1;
-}
+/*Sections*/
 .music {
   background-color: #0e9aa7;
 }
@@ -106,37 +97,129 @@ a:visited {
 .block.about h1:hover {
   color: #fe8a71;
 }
+
+
+/*Homepage*/
+#video {
+  text-align: center;
+}
+#video iframe {
+  width: 97%;
+  height: 20em;
+  margin: 0 auto;
+}
+.blocks {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.block {
+  width: 24%;
+  height: 15em;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.block h1 {
+  margin: auto;
+  margin-top: 1.7em;
+  padding: .25em;
+  border: .15em solid #fad9c1;
+  width: fit-content;
+  font-size: 2.5em;
+}
+.block h1:hover {
+  background-color: #fad9c1;
+  opacity: 1;
+}
+
+#news article {
+  width: 90%;
+  margin: .5em auto;
+  border-top: .25em solid #fad9c1;
+  padding: 1em;
+}
+
+.button {
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  padding: .25em;
+  color: #fad9c1;
+  margin: 1em auto;
+  border: .15em solid #fad9c1;
+  width: fit-content;
+  font-size: 1.2em;
+}
+.light {
+  color: #4a4e4d;
+  background-color: #fad9c1;
+}
+.button:hover {
+  color: #4a4e4d;
+  background-color: #fad9c1;
+}
+.light:hover {
+  color: #fad9c1;
+  background-color: #4a4e4d;
+}
 .feature {
-  width: 93%;
+  width: 94%;
   display: block;
   height: auto;
-  padding: 1em;
-  margin: 0 auto;
+  margin: 1em auto;
+  padding: 1em .5em;;
 }
+.feature h1 {
+  margin-left: .5em;
+}
+
 .feature img {
-  height: 20em;
+  height: 24%;
+  width: 24%;
+  cursor: pointer;
+  margin-bottom: 1em;
 }
+.feature img:hover {
+  opacity: 0.7;
+}
+
+/*Music*/
 .player {
   display: none;
-  padding: 1em;
-  width: 80%;
-  margin: 0 auto;
+  padding: .5em;
+  width: 75%;
+  margin: .5em auto;
+  text-align: center;
+  border-top: .25em solid #fad9c1;
 }
 div.description {
   display: inline-block;
-  width: 50%;
+  width: 55%;
   vertical-align: top;
   text-align: left;
 }
-iframe {
+.player iframe {
   display: inline-block;
   width: 40%;
-  height: 20em;
+  height: 28em;
   margin: 1em;
 }
 #artwork {
   text-align: center;
 }
+.musicbutton {
+  color: #0e9aa7;
+}
+.musicbutton:hover {
+  background-color: #0e9aa7;
+}
+.aboutbutton {
+  color: #fe8a71;
+}
+.aboutbutton:hover {
+  background-color: #fe8a71;
+}
+
+/*Footer*/
 #footer {
   text-align: center;
 }
@@ -146,6 +229,8 @@ iframe {
   font-weight: 400;
   font-size: 1em;
 }
+
+/*Media Queries*/
 @media screen and (max-width: 775px) {
   html {
     font-size: .65em;
@@ -165,6 +250,7 @@ iframe {
     font-size: .25em;
   }
 }*/
+
 /*Hackeroos*/
 /* Hides detail marker on FF */
 details > summary {
