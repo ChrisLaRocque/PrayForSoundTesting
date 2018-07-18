@@ -6,24 +6,6 @@ html {
   font-size: 1em;
   background-color: #4a4e4d;
 }
-#header {
-  text-align: center;
-}
-#header h1 {
-  font-size: 4em;
-  display: inline-block;
-  margin-left: 4em;
-  border: 0;
-}
-#socials {
-  display: inline-block;
-  float: right;
-  margin: 1.5em;
-}
-#socials img {
-  height: 3em;
-  display: inline;
-}
 h1 {
   color: #fad9c1;
   font-family: 'Oswald', sans-serif;
@@ -71,80 +53,31 @@ p a:link {
 p a:link:hover {
   opacity: .7;
 }
-
-/*Sections*/
-.music {
-  background-color: #0e9aa7;
-}
-.block.music h1:hover {
-  color: #0e9aa7;
-}
-.tour {
-  background-color: #3da4ab;
-}
-.block.tour h1:hover {
-  color: #3da4ab;
-}
-.store {
-  background-color: #f6cd61;
-}
-.block.store h1:hover {
-  color: #f6cd61;
-}
-.about {
-  background-color: #fe8a71;
-}
-.block.about h1:hover {
-  color: #fe8a71;
-}
-
-
-/*Homepage*/
-#video {
-  text-align: center;
-}
-#video iframe {
-  width: 97%;
-  height: 20em;
+.feature {
+  width: 95.75%;
+  display: block;
+  height: auto;
   margin: 0 auto;
+  padding: 1em .5em;;
 }
-.blocks {
-  text-align: center;
+.feature h1 {
+  margin-left: .5em;
+}
+.feature img {
+  height: 24%;
+  width: 24%;
+  cursor: pointer;
   margin-bottom: 1em;
 }
-.block {
-  width: 24%;
-  height: 15em;
-  display: inline-block;
-  vertical-align: top;
-  text-align: center;
+.feature img:hover {
+  opacity: 0.7;
 }
-.block h1 {
-  margin: auto;
-  margin-top: 1.7em;
-  padding: .25em;
-  border: .15em solid #fad9c1;
-  width: fit-content;
-  font-size: 2.5em;
-}
-.block h1:hover {
-  background-color: #fad9c1;
-  opacity: 1;
-}
-
-#news article {
-  width: 90%;
-  margin: .5em auto;
-  border-top: .25em solid #fad9c1;
-  padding: 1em;
-}
-
 .button {
   cursor: pointer;
   font-family: 'Oswald', sans-serif;
   padding: .25em;
   color: #fad9c1;
-  margin: 1em auto;
+  margin: .25em auto;
   border: .15em solid #fad9c1;
   width: fit-content;
   font-size: 1.2em;
@@ -161,25 +94,94 @@ p a:link:hover {
   color: #fad9c1;
   background-color: #4a4e4d;
 }
-.feature {
-  width: 94%;
-  display: block;
-  height: auto;
-  margin: 1em auto;
-  padding: 1em .5em;;
+
+/*Homepage*/
+#header {
+  text-align: center;
 }
-.feature h1 {
-  margin-left: .5em;
+#header h1 {
+  font-size: 4em;
+  display: inline-block;
+  margin-left: 4em;
+  border: 0;
+}
+#socials {
+  display: inline-block;
+  float: right;
+  margin: 1.5em;
+}
+#socials img {
+  height: 3em;
+  display: inline;
+}
+#video {
+  text-align: center;
+}
+#video iframe {
+  width: 97%;
+  height: 20em;
+  margin: 0 auto;
+}
+.blocks {
+  text-align: center;
+}
+.block {
+  width: 24%;
+  height: 10em;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.block h1 {
+  margin: auto;
+  margin-top: .85em;
+  padding: .25em;
+  border: .15em solid #fad9c1;
+  width: fit-content;
+  font-size: 2.5em;
+}
+.block:hover h1 {
+  background-color: #fad9c1;
+  opacity: 1;
 }
 
-.feature img {
-  height: 24%;
-  width: 24%;
-  cursor: pointer;
-  margin-bottom: 1em;
+/*Sections*/
+.tour {
+  background-color: #3da4ab;
 }
-.feature img:hover {
-  opacity: 0.7;
+.block.tour:hover h1{
+  color: #3da4ab;
+}
+.store {
+  background-color: #f6cd61;
+}
+.block.store:hover h1 {
+  color: #f6cd61;
+}
+
+/*News + About*/
+#news article {
+  width: 90%;
+  margin: .5em auto;
+  border-top: .25em solid #fad9c1;
+  padding: 1em;
+}
+.about {
+  background-color: #fe8a71;
+}
+.block.about:hover h1 {
+  color: #fe8a71;
+}
+.aboutbutton {
+  color: #fe8a71;
+  width: 25%;
+  text-align: center;
+}
+.aboutbutton:hover {
+  background-color: #fe8a71;
+}
+#news {
+  display: none;
 }
 
 /*Music*/
@@ -206,22 +208,25 @@ div.description {
 #artwork {
   text-align: center;
 }
+.music {
+  background-color: #0e9aa7;
+}
+.block.music:hover h1 {
+  color: #0e9aa7;
+}
 .musicbutton {
   color: #0e9aa7;
+  width: 25%;
+  text-align: center;
 }
 .musicbutton:hover {
   background-color: #0e9aa7;
-}
-.aboutbutton {
-  color: #fe8a71;
-}
-.aboutbutton:hover {
-  background-color: #fe8a71;
 }
 
 /*Footer*/
 #footer {
   text-align: center;
+  margin: 2em auto;
 }
 #footer p {
   font-family: 'Oswald', sans-serif;
@@ -240,23 +245,4 @@ div.description {
   html {
     font-size: .5em;
   }
-/*@media screen and (max-width: 510px) {
-  html {
-    font-size: .35em;
-  }
-}
-@media screen and (max-width: 365px) {
-  html {
-    font-size: .25em;
-  }
-}*/
-
-/*Hackeroos*/
-/* Hides detail marker on FF */
-details > summary {
-  list-style: none;
-}
-/* Hides detail marker on Chrome */
-::-webkit-details-marker {
-  display: none
 }

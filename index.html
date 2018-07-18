@@ -56,10 +56,8 @@
     </div>
 
     <div class="blocks">
-      <div class="block music">
-        <a href="music.html">
-          <h1>Music</h1>
-        </a>
+      <div class="block music musicblock">
+        <h1>Music</h1>
       </div>
       <div class="block tour">
         <h1>Tour</h1>
@@ -67,7 +65,7 @@
       <div class="block store">
         <h1>Store</h1>
       </div>
-      <div class="block about">
+      <div class="block about newsblock">
         <h1>News/About</h1>
       </div>
     </div>
@@ -128,21 +126,6 @@
         <h3>Thursday, July 12th, 2018</h3>
         <p >We have a lot of new music on our hands.  Some of the songs are complete and mastered, some are written but not recorded, and some are just incomplete ideas.  You'll hear some of them soon.  Probably sooner than you think...</p>
       </article>
-      <article>
-        <h2>Local Run</h2>
-        <h3>Sunday, September 27th, 2017</h3>
-        <p>In about two weeks, we head out on a relatively local run including the first ever Dunk!USA in Burlington, VT.  Catch us now before we go into winter writing hibernation.  See the <a href="https://prayforsound.com/tour">tour page</a> for details...</p>
-      </article>
-      <article>
-        <h2>Thank you!</h2>
-        <h3>Tuesday, June 20th, 2017</h3>
-        <p>Our European tour (with Lost in Kiev and Labirinto) and North East US tour (with InAeona) were both huge successes.  Thank you to all involved and those who came out to support Pray for Sound.</p><br/>
-        <p>What's left over of our limited tour merch is now available on our <a href="https://prayforsound.bandcamp.com/merch" target="_blank">store</a>.  We also have left over European tour posters, which we'll be giving away at future shows for free.</p><br/>
-        <p>We'll be working on several surprises throughout the summer and playing the first ever Dunk!USA (with Pelican, Coastlands, Set and Setting, and more TBA) in Burlington, Vermont in the fall.  See you out there.</p><br/>
-        <p>Love,<br/>Pray for Sound</p>
-        <p class="less button">LESS</p>
-        <div class="more button">READ MORE</div>
-      </article>
       <a href="news.html"><div class="light button aboutbutton">PAST NEWS</div></a>
     </div>
 
@@ -150,36 +133,57 @@
       <p>Pray For Sound</p>
     </div>
 
+    <!--Show+Hide Homepage Modules-->
+    <script>
+    $( ".musicblock" ).click(function() {
+      if ($( "#music" ).is(":visible")){
+        $( "#music" ).slideUp(200);
+      } else {
+        $( ".feature" ).slideUp(200);
+        $( "#music" ).slideDown(200);}
+    });
+    $( ".newsblock" ).click(function() {
+      if ($( "#news" ).is(":visible")){
+        $( "#news" ).slideUp();
+      } else {
+        $( ".feature" ).slideUp();
+        $( "#news" ).slideDown();}
+    });
+    </script>
+
+    <!--Show+Hide Album Info-->
     <script>
     $( "#wr" ).click(function() {
       if ($( ".wr" ).is(":visible")){
-        $( ".wr" ).hide(500);
+        $( ".wr" ).slideUp(200);
       } else {
-        $( ".player" ).hide(500);
-        $( ".wr" ).show(500);}
+        $( ".player" ).slideUp(200);
+        $( ".wr" ).slideDown(200);}
     });
     $( "#eib" ).click(function() {
       if ($( ".eib" ).is(":visible")){
-        $( ".eib" ).hide(500);
+        $( ".eib" ).slideUp(200);
       } else {
-        $( ".player" ).hide(500);
-        $( ".eib" ).show(500);}
+        $( ".player" ).slideUp(200);
+        $( ".eib" ).slideDown(200);}
     });
     $( "#dreamer" ).click(function() {
       if ($( ".dreamer" ).is(":visible")){
-        $( ".dreamer" ).hide(500);
+        $( ".dreamer" ).slideUp(200);
       } else {
-        $( ".player" ).hide(500);
-        $( ".dreamer" ).show(500);}
+        $( ".player" ).slideUp(200);
+        $( ".dreamer" ).slideDown(200);}
     });
     $( "#mono" ).click(function() {
       if ($( ".mono" ).is(":visible")){
-        $( ".mono" ).hide(500);
+        $( ".mono" ).slideUp(200);
       } else {
-        $( ".player" ).hide(500);
-        $( ".mono" ).show(500);}
+        $( ".player" ).slideUp(200);
+        $( ".mono" ).slideDown(200);}
     });
     </script>
+
+    <!--Show+Hide News articles-->
     <script>
     $('article').each(function(){ $(this).find('p:not(:first)').hide()});
     $('.more').on('click', function(){
