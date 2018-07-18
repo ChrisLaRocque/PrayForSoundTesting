@@ -237,6 +237,11 @@ div.description {
 }
 
 /*Media Queries*/
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: .75em;
+  }
+}
 @media screen and (max-width: 775px) {
   html {
     font-size: .65em;
