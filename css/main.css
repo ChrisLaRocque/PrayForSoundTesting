@@ -136,6 +136,7 @@ p a:link:hover {
   display: inline-block;
   vertical-align: top;
   text-align: center;
+  cursor: pointer;
 }
 .block h1 {
   margin: auto;
