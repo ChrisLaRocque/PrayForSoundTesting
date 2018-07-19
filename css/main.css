@@ -152,14 +152,6 @@ p a:link:hover {
   opacity: 1;
 }
 
-/*Sections*/
-.tour {
-  background-color: #3da4ab;
-}
-.block.tour:hover h1{
-  color: #3da4ab;
-}
-
 /*News + About*/
 .feature article {
   width: 90%;
@@ -217,7 +209,7 @@ div.description {
 }
 .musicbutton {
   color: #0e9aa7;
-  width: 25%;
+  width: 35%;
   text-align: center;
 }
 .musicbutton:hover {
@@ -227,6 +219,23 @@ div.description {
 /*Tour*/
 #tour {
   display: none;
+}
+.tour {
+  background-color: #3da4ab;
+}
+.block.tour:hover h1{
+  color: #3da4ab;
+}
+.bit-widget {
+  font-size: 1em;
+  font-family: 'Oswald', sans-serif;
+  width: 100%;
+  color: #fad9c1;
+  background-color: #3da4ab;
+}
+.bit-widget-container {
+  width: 95%;
+  margin: 0 auto;
 }
 
 /*Store*/
@@ -254,6 +263,12 @@ div.description {
   margin: 0 auto;
   width: 95%;
   text-align: center;
+}
+#physicals img{
+  margin: auto;
+}
+#eib-vinyl {
+  width: 45%;
 }
 
 /*Footer*/
