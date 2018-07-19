@@ -17,7 +17,7 @@
 		<meta property="fb:admins" content="745961270" />
 
     <!-- Icons -->
-    <link rel="favicon" type="image/png" href="favicon.ico"/>
+    <link rel="icon" type="image/png" href="favicon.ico"/>
     <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -62,7 +62,7 @@
       <div class="block tour">
         <h1>Tour</h1>
       </div>
-      <div class="block store">
+      <div class="block store storeblock">
         <h1>Store</h1>
       </div>
       <div class="block about newsblock">
@@ -119,6 +119,26 @@
       <a href="music.html"><div class="light button musicbutton">MORE MUSIC</div></a>
     </div>
 
+    <div id="store" class="feature store">
+      <h1>Store</h1>
+      <div>
+        <div id="merch">
+          <div id="apparel">
+            <h2>Apparel</h2>
+            <img id="space-tee" src="img/merch/space-tee.png" />
+            <img id="flannel" src="img/merch/flannel.png" />
+            <img id="hoodie" src="img/merch/hoodie.png" />
+          </div>
+          <div id="physicals">
+            <h2>Music</h2>
+            <img id="eib-cd" src="img/merch/eib_cd.png" />
+            <img id="eib-vinyl" src="img/merch/eib_vinyl.png" />
+          </div>
+        </div>
+      </div>
+      <a href="music.html"><div class="light button storebutton">Full Store</div></a>
+    </div>
+
     <div id="news" class="feature about">
       <h1>News</h1>
       <article>
@@ -148,6 +168,13 @@
       } else {
         $( ".feature" ).slideUp();
         $( "#news" ).slideDown();}
+    });
+    $( ".storeblock" ).click(function() {
+      if ($( "#store" ).is(":visible")){
+        $( "#store" ).slideUp();
+      } else {
+        $( ".feature" ).slideUp();
+        $( "#store" ).slideDown();}
     });
     </script>
 

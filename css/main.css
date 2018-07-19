@@ -19,6 +19,7 @@ h2 {
   font-weight: 400;
   font-size: 2em;
   width: fit-content;
+  width: -moz-fit-content;
   border-bottom: .1em solid #fad9c1;
   margin-bottom: .25em;
 }
@@ -28,6 +29,7 @@ h3 {
   font-weight: 400;
   font-size: 1em;
   width: fit-content;
+  width: -moz-fit-content;
   margin-bottom: .5em;
 }
 p {
@@ -80,6 +82,7 @@ p a:link:hover {
   margin: .25em auto;
   border: .15em solid #fad9c1;
   width: fit-content;
+  width: -moz-fit-content;
   font-size: 1.2em;
 }
 .light {
@@ -113,6 +116,7 @@ p a:link:hover {
 #socials img {
   height: 3em;
   display: inline;
+  vertical-align: middle;
 }
 #video {
   text-align: center;
@@ -139,6 +143,7 @@ p a:link:hover {
   padding: .25em;
   border: .15em solid #fad9c1;
   width: fit-content;
+  width: -moz-fit-content;
   font-size: 2.5em;
 }
 .block:hover h1 {
@@ -153,15 +158,9 @@ p a:link:hover {
 .block.tour:hover h1{
   color: #3da4ab;
 }
-.store {
-  background-color: #f6cd61;
-}
-.block.store:hover h1 {
-  color: #f6cd61;
-}
 
 /*News + About*/
-#news article {
+.feature article {
   width: 90%;
   margin: .5em auto;
   border-top: .25em solid #fad9c1;
@@ -222,6 +221,33 @@ div.description {
 }
 .musicbutton:hover {
   background-color: #0e9aa7;
+}
+
+/*Store*/
+#store {
+  display: none;
+}
+.store {
+  background-color: #f6cd61;
+}
+.block.store:hover h1 {
+  color: #f6cd61;
+}
+.storebutton {
+  color: #f6cd61;
+  width: 25%;
+  text-align: center;
+}
+.storebutton:hover {
+  background-color: #f6cd61;
+}
+#merch {
+  margin: 0 auto;
+}
+#merch div {
+  margin: 0 auto;
+  width: 95%;
+  text-align: center;
 }
 
 /*Footer*/
