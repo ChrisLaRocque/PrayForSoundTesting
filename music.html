@@ -48,6 +48,7 @@
         <a href="https://www.instagram.com/prayforsound/" target="_blank"><img src="img/logos/instagram.png" /></a>
         <a href="http://www.twitter.com/pray_for_sound" target="_blank"><img src="img/logos/twitter.png" /></a>
         <a href="http://www.youtube.com/user/prayforsoundmusic" target="_blank"><img src="img/logos/youtube.png" /></a>
+        <a href="mailto:band@prayforsound.com" target="_blank"><img src="img/logos/email.png" /></a>
       </div>
     </div>
 
@@ -96,6 +97,27 @@
           </div>
           <iframe src="https://open.spotify.com/embed/album/1wEUITDTC4QOZWwgJ4we1H" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
+        <div class="dreamixer player">
+          <div class="description">
+            <h2>Dreamixer - 2014</h2>
+            <p>A few months after the Dreamer CD release, we met Tim Tatulli and Marc Shapiro, the co-owners of Science of Silence Records. We worked out a deal to put Dreamer out on vinyl and decided we should do something special alongside the release. Without any b-sides, Bruce and Tim came up with the idea of doing a few remixes. We told every single remix artist they had complete freedom to do whatever they wanted to convey their interpretation of the particular song: remove tracks, manipulate sounds, add new instruments or parts, anything. Working with new and old friends, eventually we had remixes for every song on the original album. It was an interesting process that led to some songs we ended up liking better than the originals.</p>
+            <a href="http://music.prayforsound.com/album/dreamixer" target="_blank"><div class="light button musicbutton">BUY DREAMIXER</div></a>
+          </div>
+          <iframe src="https://open.spotify.com/embed/album/2fFanZ0aD5bgl5Utj3Ei0n"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="latme player">
+          <div class="description">
+            <h2>Live At The Middle East - 2014</h2>
+            <p>Our first tour was interesting. It was completely self booked, which meant a lot of the dates had pretty low attendance. The last night of the tour was our hometown show at a venue that is very special to us, where our first show took place, The Middle East in Cambridge, Massachusetts. It also happened to be Nick's birthday. The night before, we slept in the van in a parking lot in Buffalo, NY. Luke, our manager and Bruce's cousin, threw up in the van at about 4AM. We were dirty and tired. The van smelled terrible. Two bands dropped off the show at the last second. Nick broke a string one song in. Everything was seemingly against us, but we still had fun.</p>
+            <p> We're generally pretty awkward in front of cameras, but we hired Bootleg Boston to film and record the show so our fans overseas could still see and hear us play live. Only 100 DVDs were (hand) made.</p>
+            <a href="http://music.prayforsound.com/album/live-at-the-middle-east" target="_blank"><div class="light button musicbutton">BUY LIVE AT THE MIDDLE EAST</div></a>
+          </div>
+          <iframe src="https://open.spotify.com/embed/album/2fFanZ0aD5bgl5Utj3Ei0n"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div id="artwork">
+          <img id="dreamixer" src="img/artwork/dreamixer_artwork.jpg" />
+          <img id="latme" src="img/artwork/liveatthemiddleeast_artwork.jpg" />
+        </div>
       </div>
     </div>
 
@@ -106,31 +128,45 @@
     <script>
     $( "#wr" ).click(function() {
       if ($( ".wr" ).is(":visible")){
-        $( ".wr" ).slideUp(200);
+        $( ".wr" ).slideUp(500);
       } else {
-        $( ".player" ).slideUp(200);
-        $( ".wr" ).slideDown(200);}
+        $( ".player" ).slideUp(500);
+        $( ".wr" ).slideDown(500);}
     });
     $( "#eib" ).click(function() {
       if ($( ".eib" ).is(":visible")){
-        $( ".eib" ).slideUp(200);
+        $( ".eib" ).slideUp(500);
       } else {
-        $( ".player" ).slideUp(200);
-        $( ".eib" ).slideDown(200);}
+        $( ".player" ).slideUp(500);
+        $( ".eib" ).slideDown(500);}
     });
     $( "#dreamer" ).click(function() {
       if ($( ".dreamer" ).is(":visible")){
-        $( ".dreamer" ).slideUp(200);
+        $( ".dreamer" ).slideUp(500);
       } else {
-        $( ".player" ).slideUp(200);
-        $( ".dreamer" ).slideDown(200);}
+        $( ".player" ).slideUp(500);
+        $( ".dreamer" ).slideDown(500);}
     });
     $( "#mono" ).click(function() {
       if ($( ".mono" ).is(":visible")){
-        $( ".mono" ).slideUp(200);
+        $( ".mono" ).slideUp(500);
       } else {
-        $( ".player" ).slideUp(200);
-        $( ".mono" ).slideDown(200);}
+        $( ".player" ).slideUp(500);
+        $( ".mono" ).slideDown(500);}
+    });
+    $( "#dreamixer" ).click(function() {
+      if ($( ".dreamixer" ).is(":visible")){
+        $( ".dreamixer" ).slideUp(500);
+      } else {
+        $( ".player" ).slideUp(500);
+        $( ".dreamixer" ).slideDown(500);}
+    });
+    $( "#latme" ).click(function() {
+      if ($( ".latme" ).is(":visible")){
+        $( ".latme" ).slideUp(500);
+      } else {
+        $( ".player" ).slideUp(500);
+        $( ".latme" ).slideDown(500);}
     });
     </script>
   </body>

@@ -152,30 +152,6 @@ p a:link:hover {
   opacity: 1;
 }
 
-/*News + About*/
-.feature article {
-  width: 90%;
-  margin: .5em auto;
-  border-top: .25em solid #fad9c1;
-  padding: 1em;
-}
-.about {
-  background-color: #fe8a71;
-}
-.block.about:hover h1 {
-  color: #fe8a71;
-}
-.aboutbutton {
-  color: #fe8a71;
-  width: 25%;
-  text-align: center;
-}
-.aboutbutton:hover {
-  background-color: #fe8a71;
-}
-#news {
-  display: none;
-}
 
 /*Music*/
 .player {
@@ -269,6 +245,31 @@ div.description {
 }
 #eib-vinyl {
   width: 45%;
+}
+
+/*News + About*/
+.feature article {
+  width: 90%;
+  margin: .5em auto;
+  border-top: .25em solid #fad9c1;
+  padding: 1em;
+}
+.about {
+  background-color: #fe8a71;
+}
+.block.about:hover h1 {
+  color: #fe8a71;
+}
+.aboutbutton {
+  color: #fe8a71;
+  width: 35%;
+  text-align: center;
+}
+.aboutbutton:hover {
+  background-color: #fe8a71;
+}
+#news {
+  display: none;
 }
 
 /*Footer*/
