@@ -4,7 +4,7 @@
 }
 html {
   font-size: 1em;
-  background-color: #4a4e4d;
+  background-color: #272727;
 }
 h1 {
   color: #fad9c1;
@@ -86,16 +86,16 @@ p a:link:hover {
   font-size: 1.2em;
 }
 .light {
-  color: #4a4e4d;
+  color: #272727;
   background-color: #fad9c1;
 }
 .button:hover {
-  color: #4a4e4d;
+  color: #272727;
   background-color: #fad9c1;
 }
 .light:hover {
   color: #fad9c1;
-  background-color: #4a4e4d;
+  background-color: #272727;
 }
 
 /*Homepage*/
@@ -196,17 +196,17 @@ div.description {
   display: none;
 }
 .tour {
-  background-color: #3da4ab;
+  background-color: #77DD77;
 }
 .block.tour:hover h1{
-  color: #3da4ab;
+  color: #77DD77;
 }
 .bit-widget {
   font-size: 1em;
   font-family: 'Oswald', sans-serif;
   width: 100%;
   color: #fad9c1;
-  background-color: #3da4ab;
+  background-color: #77DD77;
 }
 .bit-widget-container {
   width: 95%;
