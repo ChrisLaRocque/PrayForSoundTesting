@@ -224,6 +224,11 @@ div.description {
   background-color: #0e9aa7;
 }
 
+/*Tour*/
+#tour {
+  display: none;
+}
+
 /*Store*/
 #store {
   display: none;
