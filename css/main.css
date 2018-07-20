@@ -1,245 +1,141 @@
+/*Elements*/
 * {
   margin: 0;
   padding: 0;
 }
 html {
-  font-size: 1em;
-  background-color: #272727;
+  background: url("/img/mountains.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+h1, h2, h3, ul, .button {
+  font-family: 'Fira Sans', sans-serif;
 }
 h1 {
-  color: white;
-  font-family: 'Oswald', sans-serif;
+  font-size: 4em;
+  font-weight: 300;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 3em;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 h2 {
-  color: white;
-  font-family: 'Oswald', sans-serif;
+  font-size: 3em;
   font-weight: 400;
-  font-size: 2em;
-  width: fit-content;
-  width: -moz-fit-content;
-  border-bottom: .05em solid white;
-  margin-bottom: .25em;
 }
 h3 {
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  font-size: 1em;
-  width: fit-content;
-  width: -moz-fit-content;
-  margin-bottom: .5em;
+  font-size: 2em;
+  font-weight: 300;
+  margin-bottom: .25em;
+}
+ul {
+  font-size: 3em;
+  font-weight: 300;
+  border-top: 4px solid;
+  border-bottom: 4px solid;
+}
+li {
+  margin: .25em auto;
+  text-transform: uppercase;
+}
+li:hover {
+  border: 4px solid;
+  transition: border .5s, padding .5s;
+  padding: .1em;
+  cursor: pointer;
 }
 p {
-  font-family: 'Quattrocento', serif;
-  color: white;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1em;
 }
-a {
-  text-decoration: none;
-}
-a:hover {
-  opacity: .7;
+img:hover {
+  -webkit-transform:scale(1.05); /* Safari and Chrome */
+  -moz-transform:scale(1.1);
+  transition: -webkit-transform .5s;
+  opacity: 1;
   cursor: pointer;
+}
+a:link {
+  text-decoration: none;
+  color: inherit;
 }
 a:visited {
-  text-decoration: none;
-  color: white;
+  color: inherit;
 }
-p a:link {
-  color: white;
-  opacity: .5;
+/*Navigation*/
+.sidebar {
+  width: 15%;
+  height: 100vh;
+  display: inline-block;
+  border-right: 4px solid;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.25);
 }
-p a:link:hover {
-  opacity: .7;
-}
-.feature {
-  width: 95.75%;
-  display: block;
-  height: auto;
-  margin: 0 auto;
-  padding: 1em .5em;;
-}
-.feature h1 {
-  margin-left: .25em;
-}
-.feature img {
-  height: 24%;
-  width: 24%;
-  cursor: pointer;
-  margin: .25em;
-}
-.feature img:hover {
-  opacity: 0.7;
-}
-.button {
-  cursor: pointer;
-  font-family: 'Oswald', sans-serif;
-  padding: .25em;
-  color: white;
-  margin: .25em auto;
-  border: .05em solid white;
+.sidebar p {
   width: fit-content;
-  width: -moz-fit-content;
-  font-size: 1.2em;
+  margin: .75em auto;
 }
-.light {
-  color: #272727;
-  background-color: white;
-}
-.button:hover {
-  color: #272727;
-  background-color: white;
-}
-.light:hover {
-  color: white;
-  background-color: #272727;
-}
-
-/*Homepage*/
-#header {
+.socials {
   text-align: center;
+  margin: 1em auto;
+  padding: .25em;
 }
-#header h1 {
-  font-size: 4em;
-  display: inline-block;
-  margin-left: 4em;
-  border: 0;
-}
-#socials {
-  display: inline-block;
-  float: right;
-  margin: 1.5em;
-}
-#socials img {
-  height: 3em;
-  display: inline;
+.socials img {
+  width: 18%;
+  margin: auto;
   vertical-align: middle;
 }
-#video {
-  text-align: center;
-}
-#video iframe {
-  width: 97%;
-  height: 20em;
-  margin: 0 auto;
-}
-.blocks {
-  text-align: center;
-  margin-top: 1.75em;
-}
-.block {
-  width: 24%;
-  height: 10em;
+
+/*Right hand content*/
+div.module {
   display: inline-block;
+  width: 75%;
+  padding: 1em;
   vertical-align: top;
-  text-align: center;
-  cursor: pointer;
+  text-align: right;
 }
-.block h1 {
-  margin: auto;
-  margin-top: 1.2em;
-  padding: .5em .8em;
-  border: .05em solid white;
-  width: fit-content;
-  width: -moz-fit-content;
-  font-size: 2em;
-  letter-spacing: 3px;
-}
-.block:hover h1 {
-  background-color: white;
-  opacity: 1;
+.module h1 {
+  display: inline-block;
+  border-bottom: 4px solid;
+  margin-bottom: 1rem;
 }
 
 /*Music*/
+.artwork {
+  text-align: center;
+}
+.artwork img {
+  width: 30%;
+  margin: .5em;
+}
 .player {
   display: none;
-  padding: .5em;
-  width: 75%;
-  margin: .5em auto;
-  text-align: center;
-  border-top: .05em solid white;
-}
-div.description {
-  display: inline-block;
-  width: 55%;
-  vertical-align: top;
-  text-align: left;
-}
-.player iframe {
-  display: inline-block;
-  width: 40%;
-  height: 28em;
   margin: 1em;
-}
-#artwork {
   text-align: center;
 }
-.music {
-  background-color: #0e9aa7;
+.description {
+  width: 55%;
+  padding: 1em;
+  display: inline-block;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.block.music:hover h1 {
-  color: #0e9aa7;
+.button {
+  margin: 1em auto;
+  width: fit-content;
+  border: 4px solid;
+  font-size: 1.5em;
+  padding: .5em;
 }
-.musicbutton {
-  color: #0e9aa7;
+iframe {
   width: 35%;
-  text-align: center;
+  vertical-align: top;
+  height: 32em;
 }
-.musicbutton:hover {
-  background-color: #0e9aa7;
-}
-
-/*Tour*/
-#tour {
-  display: none;
-}
-.tour {
-  background-color: #77DD77;
-}
-.block.tour:hover h1{
-  color: #77DD77;
-}
-.bit-widget {
-  font-size: 1em;
-  font-family: 'Oswald', sans-serif;
-  width: 100%;
-  color: white;
-  background-color: #77DD77;
-}
-.bit-widget-container {
-  width: 95%;
-  margin: 0 auto;
-}
-
 /*Store*/
-#store {
-  display: none;
-}
-.store {
-  background-color: #f6cd61;
-}
-.block.store:hover h1 {
-  color: #f6cd61;
-}
-.storebutton {
-  color: #f6cd61;
-  width: 25%;
-  text-align: center;
-}
-.storebutton:hover {
-  background-color: #f6cd61;
-}
-#merch {
-  margin: 0 auto;
-}
-#merch div {
-  margin: 0 auto;
-  width: 95%;
-  text-align: center;
+#apparel img {
+  height: 20em;
 }
 #physicals img{
   vertical-align: middle;
@@ -247,57 +143,14 @@ div.description {
 #eib-vinyl {
   width: 35%;
 }
-
-/*News + About*/
-.feature article {
-  width: 90%;
-  margin: .5em auto;
-  border-top: .05em solid white;
-  padding: 1em;
-}
-.about {
-  background-color: #fe8a71;
-}
-.block.about:hover h1 {
-  color: #fe8a71;
-}
-.aboutbutton {
-  color: #fe8a71;
-  width: 35%;
+/*Chevron*/
+.chevron {
+  display: inline-block;
+  width: 5%;
+  vertical-align: top;
   text-align: center;
+  margin-top: 2em;
 }
-.aboutbutton:hover {
-  background-color: #fe8a71;
-}
-#news {
-  display: none;
-}
-
-/*Footer*/
-#footer {
-  text-align: center;
-  margin: 2em auto;
-}
-#footer p {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 1em;
-}
-
-/*Media Queries*/
-@media screen and (max-width: 1000px) {
-  html {
-    font-size: .75em;
-  }
-}
-@media screen and (max-width: 775px) {
-  html {
-    font-size: .65em;
-  }
-}
-@media screen and (max-width: 630px) {
-  html {
-    font-size: .5em;
-  }
+.chevron img {
+  height: 3em;
 }

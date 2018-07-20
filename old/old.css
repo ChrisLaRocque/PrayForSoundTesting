@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 1em;
+  background-color: #272727;
+}
+h1 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3em;
+  letter-spacing: 3px;
+}
+h2 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  width: fit-content;
+  width: -moz-fit-content;
+  border-bottom: .05em solid white;
+  margin-bottom: .25em;
+}
+h3 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  width: fit-content;
+  width: -moz-fit-content;
+  margin-bottom: .5em;
+}
+p {
+  font-family: 'Quattrocento', serif;
+  color: white;
+  font-size: 1em;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+p a:link {
+  color: white;
+  opacity: .5;
+}
+p a:link:hover {
+  opacity: .7;
+}
+img:hover {
+  -webkit-transform:scale(1.05); /* Safari and Chrome */
+  -moz-transform:scale(1.1);
+  transition: -webkit-transform .5s;
+  opacity: 1;
+}
+.feature {
+  width: 95.75%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  padding: 1em .5em;;
+  border-top: 2px solid;
+  box-shadow: 1px 1px 8px black;
+}
+.feature h1 {
+  margin-left: .25em;
+}
+.feature img {
+  height: 24%;
+  width: 24%;
+  cursor: pointer;
+  margin: .25em;
+}
+/*.feature img:hover {
+  opacity: 0.7;
+}*/
+.button {
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  padding: .25em;
+  color: white;
+  margin: .25em auto;
+  border: .05em solid white;
+  width: fit-content;
+  width: -moz-fit-content;
+  font-size: 1.2em;
+}
+.light {
+  color: #272727;
+  background-color: white;
+}
+.button:hover {
+  color: #272727;
+  background-color: white;
+}
+.light:hover {
+  color: white;
+  background-color: #272727;
+}
+
+/*Homepage*/
+#header {
+  text-align: center;
+}
+#header h1 {
+  font-size: 4em;
+  display: inline-block;
+  margin-left: 4em;
+  border: 0;
+}
+#socials {
+  display: inline-block;
+  float: right;
+  margin: 1.5em;
+}
+#socials img {
+  height: 3em;
+  display: inline;
+  vertical-align: middle;
+}
+#video {
+  text-align: center;
+}
+#video iframe {
+  width: 97%;
+  height: 20em;
+  margin: 0 auto;
+}
+.blocks {
+  text-align: center;
+  margin-top: 1.75em;
+}
+.block {
+  width: 24%;
+  height: 10em;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 1px 1px 8px black;
+}
+.block h1 {
+  margin: auto;
+  margin-top: 1.2em;
+  padding: .5em .8em;
+  border: .05em solid white;
+  width: fit-content;
+  width: -moz-fit-content;
+  font-size: 2em;
+  letter-spacing: 3px;
+}
+.block:hover h1 {
+  background-color: white;
+  opacity: 1;
+}
+
+/*Music*/
+.player {
+  display: none;
+  padding: .5em;
+  width: 75%;
+  margin: .5em auto;
+  text-align: center;
+  border-top: .05em solid white;
+}
+div.description {
+  display: inline-block;
+  width: 55%;
+  vertical-align: top;
+  text-align: left;
+}
+.player iframe {
+  display: inline-block;
+  width: 40%;
+  height: 28em;
+  margin: 1em;
+}
+#artwork {
+  text-align: center;
+}
+#artwork img:hover {
+  box-shadow: 2px 2px 8px black;
+}
+.music {
+  background-color: #ABABAB;
+}
+.block.music:hover h1 {
+  color: #ABABAB;
+}
+.musicbutton {
+  color: #ABABAB;
+  width: 35%;
+  text-align: center;
+}
+.musicbutton:hover {
+  background-color: #ABABAB;
+}
+
+/*Tour*/
+#tour {
+  display: none;
+}
+.tour {
+  background-color: #797979;
+}
+.block.tour:hover h1{
+  color: #797979;
+}
+.bit-widget {
+  font-size: 1em;
+  font-family: 'Oswald', sans-serif;
+  width: 100%;
+  color: white;
+  background-color: #797979;
+}
+.bit-widget-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*Store*/
+#store {
+  display: none;
+}
+.store {
+  background-color: #636363;
+}
+.block.store:hover h1 {
+  color: #636363;
+}
+.storebutton {
+  color: #636363;
+  width: 25%;
+  text-align: center;
+}
+.storebutton:hover {
+  background-color: #636363;
+}
+#merch {
+  margin: 0 auto;
+}
+#merch div {
+  margin: 0 auto;
+  width: 95%;
+  text-align: center;
+}
+#physicals img{
+  vertical-align: middle;
+}
+#eib-vinyl {
+  width: 35%;
+}
+
+/*News + About*/
+.feature article {
+  width: 90%;
+  margin: .5em auto;
+  border-top: .05em solid white;
+  padding: 1em;
+}
+.about {
+  background-color: #444444;
+}
+.block.about:hover h1 {
+  color: #444444;
+}
+.aboutbutton {
+  color: #444444;
+  width: 35%;
+  text-align: center;
+}
+.aboutbutton:hover {
+  background-color: #444444;
+}
+#news {
+  display: none;
+}
+
+/*Footer*/
+#footer {
+  text-align: center;
+  margin: 2em auto;
+}
+#footer p {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: .75em;
+  }
+}
+@media screen and (max-width: 775px) {
+  html {
+    font-size: .65em;
+  }
+}
+@media screen and (max-width: 630px) {
+  html {
+    font-size: .5em;
+  }
+}

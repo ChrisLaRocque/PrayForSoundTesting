@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
 
-<html class="music">
+<html>
 
   <head>
     <meta charset="utf-8">
-    <title>Pray for Sound - Music</title>
+    <title>Pray for Sound</title>
     <link rel="icon" type="image/png" href="img/vinyl.png">
 
     <!-- Facebook open graph tags -->
@@ -13,10 +13,11 @@
 		<meta property="og:url" content="http://www.prayforsound.com" />
 		<meta property="og:image" content="apple-touch-icon.png" />
 		<meta property="og:site_name" content="Pray for Sound" />
-		<meta property="og:playerription" content="Pray for Sound - Loud Rock" />
+		<meta property="og:description" content="Pray for Sound - Loud Rock" />
 		<meta property="fb:admins" content="745961270" />
 
     <!-- Icons -->
+    <link rel="icon" type="image/png" href="favicon.ico"/>
     <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -40,7 +41,6 @@
   </head>
 
   <body>
-
     <div id="header">
       <a href="/"><h1>Pray For Sound</h1></a>
       <div id="socials">
@@ -52,7 +52,26 @@
       </div>
     </div>
 
-    <div class="feature">
+    <div id="video">
+      <iframe src="https://www.youtube.com/embed/5OvnhfDBozw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div class="blocks">
+      <div class="block music musicblock">
+        <h1>Music</h1>
+      </div>
+      <div class="block tour tourblock">
+        <h1>Tour</h1>
+      </div>
+      <div class="block store storeblock">
+        <h1>Store</h1>
+      </div>
+      <div class="block about newsblock">
+        <h1>News/About</h1>
+      </div>
+    </div>
+
+    <div id="music" class="feature music">
       <h1>Music</h1>
       <div>
         <div id="artwork">
@@ -82,7 +101,7 @@
           <div class="description">
             <h2>Dreamer - 2014</h2>
             <p>Dreamer was a complicated album. We were burnt out and forcing ourselves to write for really no reason other than having the feeling that we needed a follow up to Monophonic. Two of the songs that would end up on the album, Decayer and Conceiver, were written and performed for months. We toured with them, although they were unnamed at the time. The rest of the songs slowly formed over a long and discouraging time period of about 8 months. Sleeper was written by Nick using his looper and all the guitars were tracked exclusively by him. Sonder was put together based off of demo ideas Nick had. Dreamer was a simple, peaceful track Chris put together while trying to spark some creativity in the studio. Mourner was originally a demo started by Bruce that was restructured and rewritten as a band multiple times. Day Bringer was mainly Steve playing around with a synth at the studio. Everything felt very disjointed.</p><br/>
-            <p>Brian Morgante, a friend who has done design work for us in the past, had some very positive words to say about the songs. Without his words of encouragement, this album may not have seen the light of day.</p><br/>
+            <p>Brian Morgante, a friend who has done design work for us in the past, and who had some very positive words to say about the songs. Without his words of encouragement, this album may not have seen the light of day.</p><br/>
             <p>Conceptually, the "bookends" represent falling asleep and waking up respectively. The other tracks represent different dream states. This worked well with the general "dreamy" sound of songs. The -er suffix used at the end of all the song titles was arbitrary. We took a long, much needed hiatus after we finished recording.</p>
             <a href="http://music.prayforsound.com/album/dreamer" target="_blank"><div class="light button musicbutton">BUY DREAMER</div></a>
           </div>
@@ -97,34 +116,84 @@
           </div>
           <iframe src="https://open.spotify.com/embed/album/1wEUITDTC4QOZWwgJ4we1H" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
-        <div class="dreamixer player">
-          <div class="description">
-            <h2>Dreamixer - 2014</h2>
-            <p>A few months after the Dreamer CD release, we met Tim Tatulli and Marc Shapiro, the co-owners of Science of Silence Records. We worked out a deal to put Dreamer out on vinyl and decided we should do something special alongside the release. Without any b-sides, Bruce and Tim came up with the idea of doing a few remixes. We told every single remix artist they had complete freedom to do whatever they wanted to convey their interpretation of the particular song: remove tracks, manipulate sounds, add new instruments or parts, anything. Working with new and old friends, eventually we had remixes for every song on the original album. It was an interesting process that led to some songs we ended up liking better than the originals.</p>
-            <a href="http://music.prayforsound.com/album/dreamixer" target="_blank"><div class="light button musicbutton">BUY DREAMIXER</div></a>
+      </div>
+      <a href="music.html"><div class="light button musicbutton">MORE MUSIC</div></a>
+    </div>
+
+    <div id="tour" class="feature tour">
+      <h1>Tour</h1>
+      <div>
+        <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="pray for sound" data-display-local-dates="false" data-display-past-dates="true" data-auto-style="false" data-text-color="white" data-link-color="#7a7a7a" data-popup-background-color="#FFFFFF" data-background-color="#77DD77" data-display-limit="15" data-link-text-color="#FFFFFF"></a>
+      </div>
+    </div>
+
+    <div id="store" class="feature store">
+      <h1>Store</h1>
+      <div>
+        <div id="merch">
+          <div id="apparel">
+            <h2>Apparel</h2>
+            <img id="apparel space-tee" src="img/merch/space-tee.png" />
+            <img id="apparel flannel" src="img/merch/flannel.png" />
+            <img id="apparel hoodie" src="img/merch/hoodie.png" />
           </div>
-          <iframe src="https://open.spotify.com/embed/album/2fFanZ0aD5bgl5Utj3Ei0n"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <div class="latme player">
-          <div class="description">
-            <h2>Live At The Middle East - 2014</h2>
-            <p>Our first tour was interesting. It was completely self booked, which meant a lot of the dates had pretty low attendance. The last night of the tour was our hometown show at a venue that is very special to us, where our first show took place, The Middle East in Cambridge, Massachusetts. It also happened to be Nick's birthday. The night before, we slept in the van in a parking lot in Buffalo, NY. Luke, our manager and Bruce's cousin, threw up in the van at about 4AM. We were dirty and tired. The van smelled terrible. Two bands dropped off the show at the last second. Nick broke a string one song in. Everything was seemingly against us, but we still had fun.</p>
-            <p> We're generally pretty awkward in front of cameras, but we hired Bootleg Boston to film and record the show so our fans overseas could still see and hear us play live. Only 100 DVDs were (hand) made.</p>
-            <a href="http://music.prayforsound.com/album/live-at-the-middle-east" target="_blank"><div class="light button musicbutton">BUY LIVE AT THE MIDDLE EAST</div></a>
+          <div id="physicals">
+            <h2>Music</h2>
+            <img id="eib-cd" src="img/merch/eib_cd.png" />
+            <img id="eib-vinyl" src="img/merch/eib_vinyl.png" />
           </div>
-          <iframe src="https://open.spotify.com/embed/album/2fFanZ0aD5bgl5Utj3Ei0n"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <div id="artwork">
-          <img id="dreamixer" src="img/artwork/dreamixer_artwork.jpg" />
-          <img id="latme" src="img/artwork/liveatthemiddleeast_artwork.jpg" />
         </div>
       </div>
+      <!--<a href="music.html"><div class="light button storebutton">Full Store</div></a>-->
+    </div>
+
+    <div id="news" class="feature about">
+      <h1>News</h1>
+      <article>
+        <h2>New music</h2>
+        <h3>Thursday, July 12th, 2018</h3>
+        <p >We have a lot of new music on our hands.  Some of the songs are complete and mastered, some are written but not recorded, and some are just incomplete ideas.  You'll hear some of them soon.  Probably sooner than you think...</p>
+      </article>
+      <a href="news.html"><div class="light button aboutbutton">PAST NEWS</div></a>
     </div>
 
     <div id="footer">
       <p>Pray For Sound</p>
     </div>
 
+    <!--Show+Hide Homepage Modules-->
+    <script>
+    $( ".musicblock" ).click(function() {
+      if ($( "#music" ).is(":visible")){
+        $( "#music" ).slideUp(300);
+      } else {
+        $( ".feature" ).slideUp(300);
+        $( "#music" ).slideDown(300);}
+    });
+    $( ".tourblock" ).click(function() {
+      if ($( "#tour" ).is(":visible")){
+        $( "#tour" ).slideUp(300);
+      } else {
+        $( ".feature" ).slideUp(300);
+        $( "#tour" ).slideDown(300);}
+    });
+    $( ".storeblock" ).click(function() {
+      if ($( "#store" ).is(":visible")){
+        $( "#store" ).slideUp(300);
+      } else {
+        $( ".feature" ).slideUp(300);
+        $( "#store" ).slideDown(300);}
+    });
+    $( ".newsblock" ).click(function() {
+      if ($( "#news" ).is(":visible")){
+        $( "#news" ).slideUp(300);
+      } else {
+        $( ".feature" ).slideUp(300);
+        $( "#news" ).slideDown(300);}
+    });
+    </script>
+
+    <!--Show+Hide Album Info-->
     <script>
     $( "#wr" ).click(function() {
       if ($( ".wr" ).is(":visible")){
@@ -154,21 +223,21 @@
         $( ".player" ).slideUp(500);
         $( ".mono" ).slideDown(500);}
     });
-    $( "#dreamixer" ).click(function() {
-      if ($( ".dreamixer" ).is(":visible")){
-        $( ".dreamixer" ).slideUp(500);
-      } else {
-        $( ".player" ).slideUp(500);
-        $( ".dreamixer" ).slideDown(500);}
-    });
-    $( "#latme" ).click(function() {
-      if ($( ".latme" ).is(":visible")){
-        $( ".latme" ).slideUp(500);
-      } else {
-        $( ".player" ).slideUp(500);
-        $( ".latme" ).slideDown(500);}
-    });
     </script>
+
+    <!--Show+Hide News articles-->
+    <script>
+    $('article').each(function(){ $(this).find('p:not(:first)').hide()});
+    $('.more').on('click', function(){
+        console.log('click')
+        $(this).hide().closest('article').find('p').show();
+    })
+    $('.less').on('click', function(){
+        $('article').each(function(){ $(this).find('p:not(:first)').hide()});
+        $('.more').show();
+    })
+    </script>
+
   </body>
 
 </html>
