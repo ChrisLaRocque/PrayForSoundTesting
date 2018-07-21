@@ -69,7 +69,9 @@
             <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit curae in nec non rutrum sodales, suscipit fermentum nisi pulvinar cubilia. Mattis mauris in pulvinar turpis hac montes blandit quam condimentum, malesuada nunc odio nibh cubilia per aptent ullamcorper ridiculus, curabitur curae consequat gravida vestibulum netus placerat sociis. Fusce leo netus cubilia auctor varius magnis sagittis, ante etiam nisl euismod facilisi senectus montes dui, proin torquent tincidunt cursus lacinia posuere. Cras quisque vitae velit placerat justo erat aliquet laoreet porta diam, imperdiet tortor natoque accumsan magna egestas nascetur vulputate dignissim, conubia porttitor fusce vehicula pellentesque metus convallis massa inceptos.</p>
             <a href="http://music.prayforsound.com/album/waiting-room" target="_blank"><div class="button">BUY WAITING ROOM</div></a>
           </div>
-          <iframe src="https://open.spotify.com/embed/album/4JFNVYJ2LKXd0eB1GKJWKx" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <div class="streaming-container">
+            <iframe src="https://open.spotify.com/embed/album/4JFNVYJ2LKXd0eB1GKJWKx" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
         </div>
         <div id="eib-player" class="player">
           <div class="description">
@@ -153,14 +155,22 @@
       <div style="display:none" class="module" id="video">
         <h1>Video</h1>
         <div class="video-wrapper">
+          <div class="featured-video">
+            <div class="video-player"></div>
+            <div class="featured-video-overview">
+              <div class="featured-video-title"></div>
+              <div class="featured-video-description"></div>
+              <div class="featured-video-button"></div>
+            </div>
+          </div>
           <div class="video-mod" id="iFf4LTbE4t0">
-            <img src="img/covers/dunksession_cover.png" />
+            <img src="img/covers/iFf4LTbE4t0.png" />
             <div class="mod-desc">
               <h3>dunk! HQ Session</h3>
               <p>Live session at whatchamacall it studios.</p>
             </div>
           </div>
-          <div class="video-mod" id="iFf4LTbE4t0">
+          <div class="video-mod" id="q4uLLMILy98">
             <img src="img/covers/dunksession_cover.png" />
             <div class="mod-desc">
               <h3>dunk! HQ Session</h3>
@@ -249,25 +259,25 @@
     });
   </script>
 
-  <!--<script>
-    $(".vid-mod").click(function(){
+  <script>
+    $(".video-mod").click(function() {
       var youtube_video_id = $(this).attr("id");
       var video_url = "http://youtube.com/watch?v=" + youtube_video_id;
-      var iframe_url = "http://www.youtube.com/embed/" + youtube_video_id;
-      var api_url = "https://gdata.youtube.com/feeds/api/videos/" + youtube_video_id + "?v=2&alt=json-in-script&callback=?";
+      var iframe_url = "http://www.youtube.com/embed/" + youtube_video_id + "?autoplay=1";
+      var api_url = "https://www.googleapis.com/youtube/v3/videos?id=" + youtube_video_id + "&key=AIzaSyC44mhCdDUXxu8_C8wwzSr5QjEHWjOsvW0&part=snippet,contentDetails,statistics,status";
 
-      $(function() {
-        // Get video information and set the title.
-        $.getJSON(api_url, function(data) {
-          $(".info").html("<b><a href='" + video_url + "' target='_blank'>" + data.entry.title.$t + "</a></b>");
-        });
-      });
       // Switch to the iframe when the image is clicked.
-
-      $(this).html("<iframe src='" + iframe_url + "' frameborder='0' allowfullscreen></iframe>");
+      // Get video information and set the title.
+      $.getJSON(api_url, function(data) {
+        console.log(data);
+        $(".featured-video-title").html("<a href='" + video_url + "' target='_blank'><h3>" + data.items[0].snippet.title + "</h3></a>");
+        $(".featured-video-description").html("<p>" + data.items[0].snippet.description + "</p>");
+      });
+      $(".featured-video-button").html("<a href='" + video_url + "' target='_blank'><div class='button'>WATCH ON YOUTUBE</div></a>");
+      $(".featured-video").show();
+      $(".video-player").html("<iframe src='" + iframe_url + "' frameborder='0' allowfullscreen></iframe>");
 
     });
-
-  </script>-->
+  </script>
 
 </html>

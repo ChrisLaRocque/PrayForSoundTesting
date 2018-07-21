@@ -48,7 +48,6 @@ li:hover {
   padding: .1em;
   cursor: pointer;
 }
-
 p {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
@@ -67,6 +66,10 @@ a:link {
 a:visited {
   color: inherit;
 }
+a:hover {
+  opacity: .5;
+}
+
 /*Navigation*/
 .sidebar {
   width: fit-content;
@@ -155,6 +158,25 @@ div.module {
 .video-wrapper {
   text-align: center;
 }
+.featured-video {
+  width: 100%;
+}
+.video-player {
+  display: inline-block;
+  width: 50%
+}
+.video-player iframe {
+  height: 22em;
+  width: 39em;
+}
+.featured-video-overview {
+  font-size: 1em;
+  display:inline-block;
+  width: 40%;
+  margin: 0 1em;
+  vertical-align: top;
+}
+
 .video-mod {
   width: 30%;
   display: inline-block;
