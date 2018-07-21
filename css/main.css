@@ -66,9 +66,6 @@ a:link {
 a:visited {
   color: inherit;
 }
-a:hover {
-  opacity: .5;
-}
 
 /*Navigation*/
 .sidebar {
@@ -160,6 +157,7 @@ div.module {
 }
 .featured-video {
   width: 100%;
+  margin-bottom: 1em;
 }
 .video-player {
   display: inline-block;
@@ -176,17 +174,29 @@ div.module {
   margin: 0 1em;
   vertical-align: top;
 }
-
+.featured-video-button:hover {
+  opacity: .7;
+}
+#video-mods {
+  margin-bottom: 1em;
+}
 .video-mod {
   width: 30%;
   display: inline-block;
   margin: 0 .5em;
   text-align: left;
+  vertical-align: top;
+}
+.video-mod:hover {
+  -webkit-transform:scale(1.05); /* Safari and Chrome */
+  -moz-transform:scale(1.1);
+  transition: -webkit-transform .5s;
 }
 .video-mod img{
   width: 100%;
   display: inline-block;
 }
+
 .mod-desc {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1em;

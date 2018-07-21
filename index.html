@@ -164,24 +164,31 @@
             </div>
           </div>
           <div class="video-mod" id="iFf4LTbE4t0">
-            <img src="img/covers/iFf4LTbE4t0.png" />
+            <img/>
             <div class="mod-desc">
               <h3>dunk! HQ Session</h3>
-              <p>Live session at whatchamacall it studios.</p>
+              <p><em>Everywhere, Everywhere</em> and <em>Congratulations, You're Alive</em> performed live in Zottegem, Belgium.</p>
             </div>
           </div>
-          <div class="video-mod" id="q4uLLMILy98">
-            <img src="img/covers/dunksession_cover.png" />
+          <div class="video-mod" id="9vBGFtUGxUg">
+            <img />
             <div class="mod-desc">
-              <h3>dunk! HQ Session</h3>
-              <p>Live session at whatchamacall it studios.</p>
+              <h3>Litterbox Sessions</h3>
+              <p><em>They Gave Up Looking</em> performed live at the Litterbox</p>
             </div>
           </div>
-          <div class="video-mod" id="iFf4LTbE4t0">
-            <img src="img/covers/dunksession_cover.png" />
+          <div class="video-mod" id="TMAXA76dH0c">
+            <img />
             <div class="mod-desc">
-              <h3>dunk! HQ Session</h3>
-              <p>Live session at whatchamacall it studios.</p>
+              <h3>Making of <em>Everything is Beautiful</em></h3>
+              <p>Take a behind the scenes look at the making of <em>Everything is Beautiful</em></p>
+            </div>
+          </div>
+          <div class="video-mod" id="4t1xWdyyEVo">
+            <img />
+            <div class="mod-desc">
+              <h3>Monophonic (Official Music Video)</em></h3>
+              <p>Our music video for <em>Monophonic</em>, the title track from our first EP.</p>
             </div>
           </div>
         </div>
@@ -259,6 +266,24 @@
     });
   </script>
 
+  <!--Video image loader-->
+  <script>
+    $("li.video").click(function(){
+      var modLength = $(".video-mod").length;
+      if ($("#video:visible").length > 0){
+        for (var x = 0; modLength > x; x++){
+          $(".video-mod").each(function(){
+            var idNum = $(this).attr("id");
+            var idSRC = "/img/covers/" + idNum + ".png";
+            $(this).find("img").attr("src", idSRC);
+          });
+        }
+      }
+    });
+
+  </script>
+
+  <!--Featured video loader-->
   <script>
     $(".video-mod").click(function() {
       var youtube_video_id = $(this).attr("id");
