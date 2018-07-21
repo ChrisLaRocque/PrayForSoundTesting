@@ -262,14 +262,13 @@
   <script>
     $(".video-mod").click(function() {
       var youtube_video_id = $(this).attr("id");
-      var video_url = "http://youtube.com/watch?v=" + youtube_video_id;
-      var iframe_url = "http://www.youtube.com/embed/" + youtube_video_id + "?autoplay=1";
+      var video_url = "https://youtube.com/watch?v=" + youtube_video_id;
+      var iframe_url = "https://www.youtube.com/embed/" + youtube_video_id + "?autoplay=1";
       var api_url = "https://www.googleapis.com/youtube/v3/videos?id=" + youtube_video_id + "&key=AIzaSyC44mhCdDUXxu8_C8wwzSr5QjEHWjOsvW0&part=snippet,contentDetails,statistics,status";
 
       // Switch to the iframe when the image is clicked.
       // Get video information and set the title.
       $.getJSON(api_url, function(data) {
-        console.log(data);
         $(".featured-video-title").html("<a href='" + video_url + "' target='_blank'><h3>" + data.items[0].snippet.title + "</h3></a>");
         $(".featured-video-description").html("<p>" + data.items[0].snippet.description + "</p>");
       });
