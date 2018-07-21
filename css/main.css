@@ -165,7 +165,7 @@ div.module {
 }
 .video-player iframe {
   height: 22em;
-  width: 39em;
+  width: 100%;
 }
 .featured-video-overview {
   font-size: 1em;
@@ -184,6 +184,7 @@ div.module {
   width: 30%;
   display: inline-block;
   margin: 0 .5em;
+  margin-bottom: -1em;
   text-align: left;
   vertical-align: top;
 }
@@ -196,7 +197,6 @@ div.module {
   width: 100%;
   display: inline-block;
 }
-
 .mod-desc {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1em;
