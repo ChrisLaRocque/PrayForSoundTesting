@@ -24,6 +24,7 @@ h1 {
 h2 {
   font-size: 3em;
   font-weight: 400;
+  text-transform: uppercase;
 }
 h3 {
   font-size: 2em;
@@ -39,6 +40,7 @@ ul {
 li {
   margin: .25em auto;
   text-transform: uppercase;
+  letter-spacing: 4px;
 }
 li:hover {
   border: 4px solid;
@@ -46,6 +48,7 @@ li:hover {
   padding: .1em;
   cursor: pointer;
 }
+
 p {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
@@ -66,7 +69,7 @@ a:visited {
 }
 /*Navigation*/
 .sidebar {
-  width: 15%;
+  width: fit-content;
   height: 100vh;
   display: inline-block;
   border-right: 4px solid;
@@ -83,7 +86,7 @@ a:visited {
   padding: .25em;
 }
 .socials img {
-  width: 18%;
+  width: 2.5em;
   margin: auto;
   vertical-align: middle;
 }
@@ -116,7 +119,7 @@ div.module {
   text-align: center;
 }
 .description {
-  width: 55%;
+  width: 63%;
   padding: 1em;
   display: inline-block;
   text-align: left;
@@ -129,8 +132,8 @@ div.module {
   font-size: 1.5em;
   padding: .5em;
 }
-iframe {
-  width: 35%;
+.player iframe {
+  width: 30%;
   vertical-align: top;
   height: 32em;
 }
@@ -144,6 +147,30 @@ iframe {
 #eib-vinyl {
   width: 35%;
 }
+.store-images {
+  text-align: center;
+}
+
+/*Video*/
+.video-wrapper {
+  text-align: center;
+}
+.video-mod {
+  width: 30%;
+  display: inline-block;
+  margin: 0 .5em;
+  text-align: left;
+}
+.video-mod img{
+  width: 100%;
+  display: inline-block;
+}
+.mod-desc {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  margin-top: -.4em;
+}
+
 /*Chevron*/
 .chevron {
   display: inline-block;
@@ -155,3 +182,5 @@ iframe {
 .chevron img {
   height: 3em;
 }
+
+/*Media Queries*/

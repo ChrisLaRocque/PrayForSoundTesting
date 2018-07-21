@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <title>Pray for Sound</title>
-    <link rel="icon" type="image/png" href="../img/vinyl.png">
+    <link rel="icon" type="image/png" href="img/vinyl.png">
 
     <!-- Icons -->
     <link rel="icon" type="image/png" href="favicon.ico"/>
@@ -24,7 +24,7 @@
   <body>
     <div class="container">
       <div class="sidebar">
-        <h1>Pray For Sound</h1>
+        <h1>Pray<br/>For<br/>Sound</h1>
         <h3>MMXII</h3>
         <p>Rock band from Boston</p>
         <div class="nav">
@@ -125,7 +125,7 @@
       <div style="display:none" class="module" id="tour">
         <h1>Tour</h1>
         <div>
-          <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="pray for sound" data-display-local-dates="false" data-auto-style="false" data-text-color="white" data-link-color="#7a7a7a" data-popup-background-color="#FFFFFF" data-background-color="none" data-display-limit="15" data-link-text-color="#FFFFFF"></a>
+          <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="pray for sound" data-display-local-dates="false" data-auto-style="false" data-text-color="white" data-link-color="black" data-popup-background-color="#FFFFFF" data-background-color="none" data-display-limit="15" data-link-text-color="white"></a>
         </div>
       </div>
       <div style="display:none" class="module" id="shop">
@@ -134,21 +134,46 @@
           <div id="merch">
             <div id="apparel">
               <h2>Apparel</h2>
-              <img id="apparel space-tee" src="img/merch/space-tee.png" />
-              <img id="apparel flannel" src="img/merch/flannel.png" />
-              <img id="apparel hoodie" src="img/merch/hoodie.png" />
+              <div class="store-images">
+                <img id="apparel space-tee" src="img/merch/space-tee.png" />
+                <img id="apparel flannel" src="img/merch/flannel.png" />
+                <img id="apparel hoodie" src="img/merch/hoodie.png" />
+              </div>
             </div>
             <div id="physicals">
               <h2>Music</h2>
-              <img id="eib-cd" src="img/merch/eib_cd.png" />
-              <img id="eib-vinyl" src="img/merch/eib_vinyl.png" />
+              <div class="store-images">
+                <img id="eib-cd" src="img/merch/eib_cd.png" />
+                <img id="eib-vinyl" src="img/merch/eib_vinyl.png" />
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div style="display:none" class="module" id="video">
         <h1>Video</h1>
-        <div>
+        <div class="video-wrapper">
+          <div class="video-mod" id="iFf4LTbE4t0">
+            <img src="img/covers/dunksession_cover.png" />
+            <div class="mod-desc">
+              <h3>dunk! HQ Session</h3>
+              <p>Live session at whatchamacall it studios.</p>
+            </div>
+          </div>
+          <div class="video-mod" id="iFf4LTbE4t0">
+            <img src="img/covers/dunksession_cover.png" />
+            <div class="mod-desc">
+              <h3>dunk! HQ Session</h3>
+              <p>Live session at whatchamacall it studios.</p>
+            </div>
+          </div>
+          <div class="video-mod" id="iFf4LTbE4t0">
+            <img src="img/covers/dunksession_cover.png" />
+            <div class="mod-desc">
+              <h3>dunk! HQ Session</h3>
+              <p>Live session at whatchamacall it studios.</p>
+            </div>
+          </div>
         </div>
       </div>
       <div style="display:none" class="module" id="photo">
@@ -220,7 +245,29 @@
       }
       /*Show clicked player*/
       $( "#" + playerID ).toggle("slide");
+
     });
   </script>
+
+  <!--<script>
+    $(".vid-mod").click(function(){
+      var youtube_video_id = $(this).attr("id");
+      var video_url = "http://youtube.com/watch?v=" + youtube_video_id;
+      var iframe_url = "http://www.youtube.com/embed/" + youtube_video_id;
+      var api_url = "https://gdata.youtube.com/feeds/api/videos/" + youtube_video_id + "?v=2&alt=json-in-script&callback=?";
+
+      $(function() {
+        // Get video information and set the title.
+        $.getJSON(api_url, function(data) {
+          $(".info").html("<b><a href='" + video_url + "' target='_blank'>" + data.entry.title.$t + "</a></b>");
+        });
+      });
+      // Switch to the iframe when the image is clicked.
+
+      $(this).html("<iframe src='" + iframe_url + "' frameborder='0' allowfullscreen></iframe>");
+
+    });
+
+  </script>-->
 
 </html>
