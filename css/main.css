@@ -128,6 +128,7 @@ div.module {
 .button {
   margin: 1em auto;
   width: fit-content;
+  width: -moz-fit-content;
   border: 4px solid;
   font-size: 1.5em;
   padding: .5em;
@@ -137,7 +138,7 @@ div.module {
   vertical-align: top;
   height: 32em;
 }
-/*Store*/
+/*Shop*/
 #apparel img {
   height: 20em;
 }
@@ -147,7 +148,7 @@ div.module {
 #eib-vinyl {
   width: 35%;
 }
-.store-images {
+.shop-images {
   text-align: center;
 }
 

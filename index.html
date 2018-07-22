@@ -135,17 +135,17 @@
           <div id="merch">
             <div id="apparel">
               <h2>Apparel</h2>
-              <div class="store-images">
-                <img id="apparel space-tee" src="img/merch/space-tee.png" />
-                <img id="apparel flannel" src="img/merch/flannel.png" />
-                <img id="apparel hoodie" src="img/merch/hoodie.png" />
+              <div class="shop-images">
+                <img id="space-tee" />
+                <img id="flannel" />
+                <img id="hoodie" />
               </div>
             </div>
             <div id="physicals">
               <h2>Music</h2>
-              <div class="store-images">
-                <img id="eib-cd" src="img/merch/eib_cd.png" />
-                <img id="eib-vinyl" src="img/merch/eib_vinyl.png" />
+              <div class="shop-images">
+                <img id="eib_cd" />
+                <img id="eib_vinyl" />
               </div>
             </div>
           </div>
@@ -308,6 +308,23 @@
 
     });
 
+  </script>
+
+  <!--Shop image loader-->
+  <script>
+    $("li.shop").click(function(){
+      var modLength = $(".shop-images img").length;
+
+      if ($("#shop:visible").length > 0){
+        for (var x = 0; modLength > x; x++){
+          $(".shop-images img").each(function(){
+            var idNum = $(this).attr("id");
+            var idSRC = "./img/merch/" + idNum + ".png";
+            $(this).attr("src", idSRC);
+          });
+        }
+      }
+    });
   </script>
 
   <!--Video image loader-->
