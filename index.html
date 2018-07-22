@@ -70,7 +70,7 @@
             <p>Uh?</p>
             <a href="http://music.prayforsound.com/album/waiting-room" target="_blank"><div class="button">BUY WAITING ROOM</div></a>
           </div>
-          <iframe src="https://open.spotify.com/embed/album/4JFNVYJ2LKXd0eB1GKJWKx" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe id="4JFNVYJ2LKXd0eB1GKJWKx" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
         <div id="eib-player" class="player">
           <div class="description">
@@ -79,7 +79,7 @@
             <p>"Everything is beautiful" was a thought Bruce had while flying over the Grand Canyon. It fits the general dichotic concept we were going for: good vs evil, light vs dark, and the idea that that even dark times can have some positive in them.</p>
             <a href="http://music.prayforsound.com/album/everything-is-beautiful" target="_blank"><div class="button">BUY EVERYTHING IS BEAUTIFUL</div></a>
           </div>
-          <iframe src="https://open.spotify.com/embed/album/4JFNVYJ2LKXd0eB1GKJWKx" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe id="4JFNVYJ2LKXd0eB1GKJWKx" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
         <div id="dreamer-player" class="player">
           <div class="description">
@@ -89,7 +89,7 @@
             <p>Conceptually, the "bookends" represent falling asleep and waking up respectively. The other tracks represent different dream states. This worked well with the general "dreamy" sound of songs. The -er suffix used at the end of all the song titles was arbitrary. We took a long, much needed hiatus after we finished recording.</p>
             <a href="http://music.prayforsound.com/album/dreamer" target="_blank"><div class="button ">BUY DREAMER</div></a>
           </div>
-          <iframe src="https://open.spotify.com/embed/album/1faB36WLHliVa6xqjzTtcu" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe id="1faB36WLHliVa6xqjzTtcu" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
         <div id="mono-player" class="player">
           <div class="description">
@@ -98,7 +98,7 @@
             <p>After Monophonic’s release, Pray for Sound saw some minor successes. A small fan base was amassed, and the idea of playing the songs on Monophonic to a live audience became a goal. Joe, Chris, Nick, and Steve were brought in to perform the songs. We clicked. Not long after, we started working on songs together and everyone officially became contributing members.</p>
             <a href="http://music.prayforsound.com/album/monophonic" target="_blank"><div class="button">BUY MONOPHONIC</div></a>
           </div>
-          <iframe src="https://open.spotify.com/embed/album/1wEUITDTC4QOZWwgJ4we1H" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe id="1wEUITDTC4QOZWwgJ4we1H" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
         <div id="dreamixer-player" class="player">
           <div class="description">
@@ -106,7 +106,7 @@
             <p>A few months after the Dreamer CD release, we met Tim Tatulli and Marc Shapiro, the co-owners of Science of Silence Records. We worked out a deal to put Dreamer out on vinyl and decided we should do something special alongside the release. Without any b-sides, Bruce and Tim came up with the idea of doing a few remixes. We told every single remix artist they had complete freedom to do whatever they wanted to convey their interpretation of the particular song: remove tracks, manipulate sounds, add new instruments or parts, anything. Working with new and old friends, eventually we had remixes for every song on the original album. It was an interesting process that led to some songs we ended up liking better than the originals.</p>
             <a href="http://music.prayforsound.com/album/dreamixer" target="_blank"><div class="button">BUY DREAMIXER</div></a>
           </div>
-          <iframe src="https://open.spotify.com/embed/album/2fFanZ0aD5bgl5Utj3Ei0n"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe id="2fFanZ0aD5bgl5Utj3Ei0n" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
         <div id="latme-player" class="player">
           <div class="description">
@@ -115,7 +115,7 @@
             <p> We're generally pretty awkward in front of cameras, but we hired Bootleg Boston to film and record the show so our fans overseas could still see and hear us play live. Only 100 DVDs were (hand) made.</p>
             <a href="http://music.prayforsound.com/album/live-at-the-middle-east" target="_blank"><div class="button">BUY LIVE AT THE MIDDLE EAST</div></a>
           </div>
-          <iframe src="https://open.spotify.com/embed/album/2fFanZ0aD5bgl5Utj3Ei0n"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe id="2fFanZ0aD5bgl5Utj3Ei0n" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
         <div class="artwork">
           <img id="mono" />
@@ -267,8 +267,25 @@
       }
       /*Show clicked player*/
       $( "#" + playerID ).toggle("slide");
-
+        var imgID = $(this).attr("id"); /*ID of clicked image*/
     });
+  </script>
+
+  <!--Music player loader-->
+  <script>
+    $( ".artwork img" ).click(function() {
+      var imgID = $(this).attr("id"); /*ID of clicked image*/
+      var playerID = imgID + "-player"; /*Player ID to be changed*/
+      var album_id_num = $("#" + playerID).find("iframe").attr("id");
+      var iframe_url = "https://open.spotify.com/embed/album/" + album_id_num;
+      console.log("IMGID: " + imgID);
+      console.log("playerID:" + playerID);
+      console.log("album_id_num: " + album_id_num);
+      console.log("iframe_url: " + iframe_url);
+
+      $("#" + playerID).find("iframe").attr("src", iframe_url);
+    });
+
   </script>
 
   <!--Music image loader-->
