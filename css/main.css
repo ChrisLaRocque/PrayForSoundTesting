@@ -75,6 +75,7 @@ a:visited {
   border-right: 4px solid;
   padding: 1em;
   background-color: rgba(0, 0, 0, 0.25);
+  margin-bottom: 0;
 }
 .sidebar p {
   width: fit-content;
