@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400|Montserrat:400" rel="stylesheet">
 
     <!-- jQuery -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
 
   </head>
 
@@ -38,11 +38,11 @@
           </ul>
         </div>
         <div class="socials">
-          <a href="http://www.facebook.com/prayforsound" target="_blank"><img src="img/logos/facebook.png" /></a>
-          <a href="https://www.instagram.com/prayforsound/" target="_blank"><img src="img/logos/instagram.png" /></a>
-          <a href="http://www.twitter.com/pray_for_sound" target="_blank"><img src="img/logos/twitter.png" /></a>
-          <a href="http://www.youtube.com/user/prayforsoundmusic" target="_blank"><img src="img/logos/youtube.png" /></a>
-          <a href="mailto:band@prayforsound.com" target="_blank"><img src="img/logos/email.png" /></a>
+          <a href="http://www.facebook.com/prayforsound" target="_blank"><img src="img/icons/facebook.png" /></a>
+          <a href="https://www.instagram.com/prayforsound/" target="_blank"><img src="img/icons/instagram.png" /></a>
+          <a href="http://www.twitter.com/pray_for_sound" target="_blank"><img src="img/icons/twitter.png" /></a>
+          <a href="http://www.youtube.com/user/prayforsoundmusic" target="_blank"><img src="img/icons/youtube.png" /></a>
+          <a href="mailto:band@prayforsound.com" target="_blank"><img src="img/icons/email.png" /></a>
         </div>
       </div>
       <div class="module" id="home">
@@ -166,14 +166,7 @@
             <img/>
             <div class="mod-desc">
               <h3>dunk! HQ Session</h3>
-              <p><em>Everywhere, Everywhere</em> and <em>Congratulations, You're Alive</em> performed live in Zottegem, Belgium.</p>
-            </div>
-          </div>
-          <div class="video-mod" id="9vBGFtUGxUg">
-            <img />
-            <div class="mod-desc">
-              <h3>Litterbox Sessions</h3>
-              <p><em>They Gave Up Looking</em> performed live at the Litterbox</p>
+              <p>"Everywhere, Everywhere" and "Congratulations, You're Alive" performed live in Zottegem, Belgium.</p>
             </div>
           </div>
           <div class="video-mod" id="TMAXA76dH0c">
@@ -186,15 +179,93 @@
           <div class="video-mod" id="4t1xWdyyEVo">
             <img />
             <div class="mod-desc">
-              <h3>Monophonic (Official Music Video)</em></h3>
-              <p>Our music video for <em>Monophonic</em>, the title track from our first EP.</p>
+              <h3>Monophonic (Official Music Video)</h3>
+              <p>Our music video for "Monophonic", the title track from our first EP.</p>
             </div>
           </div>
-          <div class="video-mod" id="iFf4LTbE4t0">
-            <img/>
-            <div class="mod-desc">
-              <h3>dunk! HQ Session</h3>
-              <p><em>Everywhere, Everywhere</em> and <em>Congratulations, You're Alive</em> performed live in Zottegem, Belgium.</p>
+          <div class="collections">
+            <h2>Collections</h2>
+            <div class="collection-mod" id="cabin">
+              <img src="img/covers/cabin.png"/>
+              <div class="mod-desc">
+                <h3>Live From the Young Cabin</h3>
+                <p><em>Everything is Beautiful</em> played live in its' entirety from the cabin in which it was written.</p>
+                <span id="toggle">
+                  <img src="img/icons/plus.png">
+                  <img style="display:none" src="img/icons/minus.png">
+                </span>
+              </div>
+            </div>
+            <div class="collection-mod" id="litterbox">
+              <img src="img/covers/litterbox.png"/>
+              <div class="mod-desc">
+                <h3>Litterbox Sessions</h3>
+                <p>"They Gave Up Looking" and "I Have Seen Hell and It's White" performed for Litterbox Sessions.</p>
+                <span id="toggle">
+                  <img src="img/icons/plus.png">
+                  <img style="display:none" src="img/icons/minus.png">
+                </span>
+              </div>
+            </div>
+          </div>
+          <div id="cabin_collection" class="collection" style="display:none;">
+            <div class="video-mod" id="T1cQT_Co824">
+              <img/>
+              <div class="mod-desc">
+                <h3>The Ringing In Your Ears / Once One Begins... / They Gave Up Looking</h3>
+                <p>The first three songs off <em>Everything is Beautiful</em> performed live from the Young Cabin in Vermont.</p>
+              </div>
+            </div>
+            <div class="video-mod" id="5r5DEsQs0KU">
+              <img/>
+              <div class="mod-desc">
+                <h3>I Have Seen Hell and It's White - Live from the Young Cabin</h3>
+                <p>"I Have Seen Hell and It's White" performed live from the Young Cabin in Vermont.</p>
+              </div>
+            </div>
+            <div class="video-mod" id="Xz3rUAmpcvQ">
+              <img/>
+              <div class="mod-desc">
+                <h3>Only When It Is Dark Enough Can You See The Stars - Live from the Young Cabin</h3>
+                <p>"Only When It Is Dark Enough Can You See The Stars" performed live from the Young Cabin in Vermont.</p>
+              </div>
+            </div>
+            <div class="video-mod" id="dYzGaT282M0">
+              <img/>
+              <div class="mod-desc">
+                <h3>Everywhere, Everywhere / Congratulations, You're Alive - Live from the Young Cabin</h3>
+                <p>"Everywhere, Everywhere" and "Congratulations, You're Alive" performed live from the Young Cabin in Vermont.</p>
+              </div>
+            </div>
+            <div class="video-mod" id="5OvnhfDBozw">
+              <img/>
+              <div class="mod-desc">
+                <h3>The Light in Your Eyes / Anything Can Be - Live from the Young Cabin</h3>
+                <p>"The Light in Your Eyes" and "Anything Can Be" performed live from the Young Cabin in Vermont.</p>
+              </div>
+            </div>
+            <div class="video-mod" id="g93hBCiicS8">
+              <img/>
+              <div class="mod-desc">
+                <h3>Til The Summer Comes Again - Live from the Young Cabin</h3>
+                <p>"Til The Summer Comes Again" performed live from the Young Cabin in Vermont.</p>
+              </div>
+            </div>
+          </div>
+          <div id="litterbox_collection" class="collection" style="display:none;">
+            <div class="video-mod" id="9vBGFtUGxUg">
+              <img />
+              <div class="mod-desc">
+                <h3>They Gave Up Looking - Litterbox Sessions</h3>
+                <p>"They Gave Up Looking" live for Litterbox Sessions.</p>
+              </div>
+            </div>
+            <div class="video-mod" id="A9zsthSMvA8">
+              <img/>
+              <div class="mod-desc">
+                <h3>I Have Seen Hell and It's White - Litterbox Sessions</h3>
+                <p>"I Have Seen Hell and It's White" live for Litterbox Sessions.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -343,6 +414,23 @@
     });
   </script>
 
+  <!--Video collection loader-->
+  <!--<script>
+    $(".collection-mod").click(function(){
+      var mods = document.getElementsByClassName("collection-mod");
+      var collectionID = $(this).attr("id");
+
+      $(mods).find("#toggle img").addClass("open");
+      $(this).find("#toggle img").toggle();
+
+      if ($(".collection:visible").length > 1){
+        $(".collection:visible").hide();
+      }
+      $("#" + collectionID + "_collection").toggle();
+    });
+
+  </script>-->
+
   <!--Featured video loader-->
   <script>
     $(".video-mod").click(function() {
@@ -360,6 +448,8 @@
       $(".featured-video-button").html("<a href='" + video_url + "' target='_blank'><div class='button'>WATCH ON YOUTUBE</div></a>");
       $(".featured-video").show();
       $(".video-player").html("<iframe src='" + iframe_url + "' frameborder='0' allowfullscreen></iframe>");
+
+      window.scrollTo(0, 0);
 
     });
   </script>

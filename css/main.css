@@ -197,7 +197,11 @@ div.module {
 #video-mods {
   margin-bottom: 1em;
 }
-.video-mod {
+#video img {
+  width: 100%;
+  display: inline-block;
+}
+.video-mod, .collection-mod {
   width: 30%;
   display: inline-block;
   margin: .5em;
@@ -209,11 +213,11 @@ div.module {
   -moz-transform:scale(1.1);
   transition: -webkit-transform .5s;
 }
-.video-mod img{
-  width: 100%;
-  display: inline-block;
-}
 .video-mod img:hover{
+  -webkit-transform:scale(1); /* Safari and Chrome */
+  -moz-transform:scale(1);
+}
+.collection-mod img:hover{
   -webkit-transform:scale(1); /* Safari and Chrome */
   -moz-transform:scale(1);
 }
@@ -222,6 +226,25 @@ div.module {
   padding: 1em;
   margin-top: -.4em;
 }
+.mod-desc h3 {
+  font-size: 1.5em;
+}
+.collection {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.collection-mod:hover{
+  cursor: pointer;
+}
+#toggle {
+  display: inline-block;
+  float: right;
+  margin-top: -1em;
+}
+#toggle img:hover {
+  -webkit-transform:scale(1.1); /* Safari and Chrome */
+  -moz-transform:scale(1.1);
+}
+
 
 /*Chevron*/
 .chevron {
