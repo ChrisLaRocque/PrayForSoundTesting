@@ -5,7 +5,6 @@
   padding: 0;
 }
 html {
-  background: url("../img/mountains.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -195,6 +194,10 @@ div.module {
 .video-mod img{
   width: 100%;
   display: inline-block;
+}
+.video-mod img:hover{
+  -webkit-transform:scale(1); /* Safari and Chrome */
+  -moz-transform:scale(1);
 }
 .mod-desc {
   background-color: rgba(0, 0, 0, 0.5);
