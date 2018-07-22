@@ -59,19 +59,18 @@
       <div style="display:none" class="module" id="music">
         <h1>Music</h1>
         <div class="artwork">
-          <img id="wr" src="img/artwork/waitingroom_artwork.png" />
-          <img id="eib" src="img/artwork/EIB_artwork.jpg" />
-          <img id="dreamer" src="img/artwork/dreamer_artwork.jpg" />
+          <img id="wr" />
+          <img id="eib" />
+          <img id="dreamer" />
         </div>
-        <div id="wr-player" class="wr player">
+        <div id="wr-player" class="player">
           <div class="description">
             <h3>Waiting Room - 2018</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit curae in nec non rutrum sodales, suscipit fermentum nisi pulvinar cubilia. Mattis mauris in pulvinar turpis hac montes blandit quam condimentum, malesuada nunc odio nibh cubilia per aptent ullamcorper ridiculus, curabitur curae consequat gravida vestibulum netus placerat sociis. Fusce leo netus cubilia auctor varius magnis sagittis, ante etiam nisl euismod facilisi senectus montes dui, proin torquent tincidunt cursus lacinia posuere. Cras quisque vitae velit placerat justo erat aliquet laoreet porta diam, imperdiet tortor natoque accumsan magna egestas nascetur vulputate dignissim, conubia porttitor fusce vehicula pellentesque metus convallis massa inceptos.</p>
+            <p>Uh?</p>
             <a href="http://music.prayforsound.com/album/waiting-room" target="_blank"><div class="button">BUY WAITING ROOM</div></a>
           </div>
-          <div class="streaming-container">
-            <iframe src="https://open.spotify.com/embed/album/4JFNVYJ2LKXd0eB1GKJWKx" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-          </div>
+          <iframe src="https://open.spotify.com/embed/album/4JFNVYJ2LKXd0eB1GKJWKx" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
         <div id="eib-player" class="player">
           <div class="description">
@@ -119,9 +118,9 @@
           <iframe src="https://open.spotify.com/embed/album/2fFanZ0aD5bgl5Utj3Ei0n"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
         <div class="artwork">
-          <img id="mono" src="img/artwork/mono_artwork.jpg" />
-          <img id="dreamixer" src="img/artwork/dreamixer_artwork.jpg" />
-          <img id="latme" src="img/artwork/liveatthemiddleeast_artwork.jpg" />
+          <img id="mono" />
+          <img id="dreamixer" />
+          <img id="latme" />
         </div>
       </div>
       <div style="display:none" class="module" id="tour">
@@ -272,6 +271,23 @@
     });
   </script>
 
+  <!--Music image loader-->
+  <script>
+    $("li.music").click(function(){
+      var modLength = $(".artwork img").length;
+
+      if ($("#music:visible").length > 0){
+        for (var x = 0; modLength > x; x++){
+          $(".artwork img").each(function(){
+            var idNum = $(this).attr("id");
+            var idSRC = "./img/artwork/" + idNum + "_artwork.jpg";
+            $(this).attr("src", idSRC);
+          });
+        }
+      }
+    });
+  </script>
+
   <!--Video image loader-->
   <script>
     $("li.video").click(function(){
@@ -286,7 +302,6 @@
         }
       }
     });
-
   </script>
 
   <!--Featured video loader-->

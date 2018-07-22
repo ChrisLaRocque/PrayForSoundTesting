@@ -183,8 +183,7 @@ div.module {
 .video-mod {
   width: 30%;
   display: inline-block;
-  margin: 0 .5em;
-  margin-bottom: -1em;
+  margin: .5em;
   text-align: left;
   vertical-align: top;
 }
