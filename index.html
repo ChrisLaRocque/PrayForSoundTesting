@@ -278,10 +278,6 @@
       var playerID = imgID + "-player"; /*Player ID to be changed*/
       var album_id_num = $("#" + playerID).find("iframe").attr("id");
       var iframe_url = "https://open.spotify.com/embed/album/" + album_id_num;
-      console.log("IMGID: " + imgID);
-      console.log("playerID:" + playerID);
-      console.log("album_id_num: " + album_id_num);
-      console.log("iframe_url: " + iframe_url);
 
       $("#" + playerID).find("iframe").attr("src", iframe_url);
     });
