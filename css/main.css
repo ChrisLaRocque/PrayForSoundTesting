@@ -139,6 +139,18 @@ div.module {
   vertical-align: top;
   height: 32em;
 }
+#eib-player iframe {
+  height: 28em;
+}
+#dreamer-player iframe {
+  height: 20em;
+}
+#mono-player iframe {
+  height: 16em;
+}
+#dreamixer-player iframe {
+  height: 20em;
+}
 /*Shop*/
 #apparel img {
   height: 20em;
