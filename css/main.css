@@ -139,6 +139,9 @@ div.module {
   vertical-align: top;
   height: 32em;
 }
+#wr-player iframe {
+  height: 22em;
+}
 #eib-player iframe {
   height: 28em;
 }
