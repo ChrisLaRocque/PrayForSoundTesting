@@ -1,3 +1,4 @@
+/* Global Overrides */
 body {
     background-color: white;
     color: black;
@@ -6,27 +7,32 @@ body {
 nav {
     font-weight: 800;
 }
+a:link {
+    color: grey;
+}
+.btn:hover {
+    color: grey;
+    text-decoration: none;
+}
 section {
     background: no-repeat;
     background-size: cover; 
+    padding: 1vh;
+    background-position: center center;
+}
+.header {
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    line-height: 36px;
 }
 section h1 {
     font-weight: 900;
-    text-transform: uppercase;
 }
 section h2 {
     font-weight: 800;
-    text-transform: uppercase;
 }
 section h3 {
     font-weight: 700;
-    text-transform: uppercase;
-}
-.dark {
-    color: black;
-}
-.light {
-    color: white
 }
 .bl {
     border-left: 2px solid white;
@@ -43,8 +49,21 @@ section h3 {
 .what {
     border: 2px solid black;
 }
-#intro .container {
-    border-bottom: 2px solid white;
+
+/* Dark+Light Classes */
+.dark {
+    color: black;
+}
+.light {
+    color: white
+}
+.bb {
+    border-bottom: 5px solid white;
+    margin-bottom: 2vh;
+}
+/* Intro */
+#intro {
+    padding-top: 7vh;
 }
 .button-group .btn {
     margin-bottom: 1vh;
@@ -55,3 +74,39 @@ section h3 {
     padding: 2vh 0;
     margin: 0 0 3vh 0;
 }
+
+/* Music */
+.card {
+    background: white;
+    color: black;
+    border: 0;
+    margin-bottom: 1vh;
+}
+.artwork:hover {
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+/*Shows*/
+.bit-logo-container {
+    display: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 992px) {
+    .bl {
+        border-left: 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {} 
