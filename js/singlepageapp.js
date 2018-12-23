@@ -1,3 +1,8 @@
+//Sidebar Loader
+$(function(){
+  $("#sidebar-placeholder").load("sidebar.html");
+});
+
 //Tab click to open
   $( "li" ).click(function() {
     var buttonClass = $(this).attr("class");
