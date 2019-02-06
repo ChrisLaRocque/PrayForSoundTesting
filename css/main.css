@@ -1,60 +1,53 @@
-/* Global Overrides */
+/* Element Overrides */
 body {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     font-family: 'Montserrat', sans-serif;
 }
-nav {
+h1, h2, h3, h4 {
+    text-transform: uppercase;
     font-weight: 800;
+    margin: 1.5vh 0;
+    line-height: 4vh;
 }
-a:link {
-    color: grey;
+h2, h3, h4 {
+    line-height: 4vh;
 }
-.btn:hover {
-    color: grey;
-    text-decoration: none;
+h1 {
+    border: 6px solid white;
+    border-radius: 4px;
+    padding: 1vh;
+    margin-bottom: 3vh;
+    width: fit-content;
+    line-height: 5vh;
 }
 section {
-    background: no-repeat;
-    background-size: cover; 
-    padding: 1vh;
-    background-position: center center;
+    margin: 3vh 1vh;
 }
-.header {
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    line-height: 36px;
+section:first-of-type {
+    margin-top: 13vh;
 }
-section h1 {
-    font-weight: 900;
-}
-section h2 {
-    font-weight: 800;
-}
-section h3 {
-    font-weight: 700;
-}
-h4 {
-    font-weight: 700;
-    font-size: 1.25em;
-    line-height: 24px;
-}
-.bl {
-    border-left: 2px solid white;
-}
-.btn {
-    background-color: transparent;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: white;
-}
-.row {
-    padding: 3vh 0;
-}
-.what {
-    border: 2px solid black;
+hr {
+    background-color: white;
+    height: 1vh;
 }
 
+/* Class overrides */
+.button-group {
+    text-align: center;
+}
+.btn {
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 34%;
+    margin: .5vh auto;
+}
+ul.navbar-nav {
+    font-weight: 800;
+}
+.fa{
+    font-size: 5vh;
+}
 
 /* Dark+Light Classes */
 .dark {
@@ -63,46 +56,26 @@ h4 {
 .light {
     color: white
 }
-.bb {
-    border-bottom: 5px solid white;
-    margin-bottom: 2vh;
-}
-/* Intro */
-#intro {
-    padding-top: 7vh;
-}
-.button-group .btn {
-    margin-bottom: 1vh;
-    width: 49%;
-}
-.news-blurb {
-    border-bottom: 2px solid white;
-    padding: 2vh 0;
-    margin: 0 0 3vh 0;
-}
 
 /* Music */
 .card {
-    background: white;
-    color: black;
-    border: 0;
-    margin-bottom: 1vh;
+    background-color: transparent;
+    border: 4px solid white;
+    margin: 1vh 0;
+    border-radius: 3px;
 }
-.hover:hover {
-    transform: scale(1.05);
-    transition: .25s;
+.card-header {
+    vertical-align: middle;
+    padding: 1vh;
 }
-
-/* Shows */
-.bit-logo-container {
-    display: none;
+.card-header h5 {
+    margin: 0;
 }
 
 /* Videos */
 .cover-img {
     position: relative;
 }
-
 .cover-img i {
     top: 50%;
     left: 50%;
@@ -110,25 +83,22 @@ h4 {
     transform: translate(-50%, -50%);
     font-size: 60px;
 } 
-.featured-video {
-    display: none;
+
+/* Footer */
+#footer .row {
+    margin: 2vh auto;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 992px) {
-    .bl {
-        border-left: 0;
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .btn {
+        width: 49%;
     }
-}
+} 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {} 
+@media only screen and (max-width: 334px) {
+    h4 {
+        font-size: 2.5vh;
+    }
+  }
+  
