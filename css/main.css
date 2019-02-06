@@ -2,19 +2,20 @@
 body {
     background-color: black;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: bc-alphapipe, sans-serif;
 }
 h1, h2, h3, h4 {
     text-transform: uppercase;
-    font-weight: 800;
     margin: 1.5vh 0;
     line-height: 4vh;
 }
 h2, h3, h4 {
     line-height: 4vh;
+    font-weight: 700;
 }
 h1 {
     border: 6px solid white;
+    font-weight: 400;
     border-radius: 4px;
     padding: 1vh;
     margin-bottom: 3vh;
