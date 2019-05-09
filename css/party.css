@@ -1,0 +1,81 @@
+/* Element Overrides */
+body {
+    background-image: url('/img/backgrounds/BackCoverLayersWithWear.png');
+    color: white;
+    font-family: bc-alphapipe, sans-serif;
+}
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+    margin: 1.5vh 0;
+    line-height: 4vh;
+}
+h2, h3, h4 {
+    line-height: 4vh;
+    font-weight: 700;
+}
+h1 {
+    border: 6px solid white;
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 1vh;
+    margin-bottom: 3vh;
+    width: fit-content;
+    line-height: 5vh;
+}
+section {
+    margin: 3vh 1vh;
+}
+section:first-of-type {
+    margin-top: 13vh;
+}
+hr {
+    background-color: white;
+    height: 1vh;
+}
+
+/* Class overrides */
+.button-group {
+    text-align: center;
+}
+.btn {
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 34%;
+    margin: .5vh auto;
+}
+ul.navbar-nav {
+    font-weight: 800;
+}
+.fa{
+    font-size: 3vh;
+}
+.nav-link {
+    font-size: 2vh;
+}
+
+/* Dark+Light Classes */
+.dark {
+    color: black;
+}
+.light {
+    color: white
+}
+
+/* Footer */
+#footer .row {
+    margin: 2vh auto;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .btn {
+        width: 49%;
+    }
+} 
+
+@media only screen and (max-width: 334px) {
+    h4 {
+        font-size: 2.5vh;
+    }
+  }
+  
