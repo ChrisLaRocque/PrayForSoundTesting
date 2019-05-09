@@ -1,6 +1,6 @@
 /* Element Overrides */
 body {
-    background-image: url('/img/backgrounds/BackCoverLayersWithWear.png');
+    background-image: url('../img/backgrounds/BackCoverLayersWithWear.png');
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -38,7 +38,7 @@ p {
     font-style: normal;
 }
 button {
-    border: 3px solid white;
+    border: 4px solid white;
     border-radius: 4px;
     font-size: 2.5vh;
     padding: 1vh;
