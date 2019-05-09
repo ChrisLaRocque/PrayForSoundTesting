@@ -1,24 +1,24 @@
 /* Element Overrides */
 body {
     background-image: url('/img/backgrounds/BackCoverLayersWithWear.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     font-family: bc-alphapipe, sans-serif;
 }
 h1, h2, h3, h4 {
     text-transform: uppercase;
     margin: 1.5vh 0;
-    line-height: 4vh;
+    font-weight: 700;
 }
 h2, h3, h4 {
     line-height: 4vh;
-    font-weight: 700;
 }
 h1 {
     border: 6px solid white;
-    font-weight: 400;
     border-radius: 4px;
     padding: 1vh;
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
     width: fit-content;
     line-height: 5vh;
 }
@@ -26,11 +26,30 @@ section {
     margin: 3vh 1vh;
 }
 section:first-of-type {
-    margin-top: 13vh;
+    margin-top: 10vh;
 }
 hr {
     background-color: white;
     height: 1vh;
+}
+p {
+    font-family: abril-text,serif;
+    font-weight: 400;
+    font-style: normal;
+}
+button {
+    border: 3px solid white;
+    border-radius: 4px;
+    font-size: 2.5vh;
+    padding: 1vh;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: .35vh;
+}
+button:hover {
+    background-color: white;
+    color: black;
 }
 
 /* Class overrides */
@@ -59,6 +78,17 @@ ul.navbar-nav {
 }
 .light {
     color: white
+}
+
+/* Nav Tweaks */
+.navbar h4 {
+    margin: .75vh;
+}
+
+/* Player Overrides */
+#player {
+    font-family: abril-text,serif!important;
+    font-size: 12px;
 }
 
 /* Footer */
